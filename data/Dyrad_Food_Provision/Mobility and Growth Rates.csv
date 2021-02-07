@@ -1,0 +1,812 @@
+,Scientific name,Family,Common name,Growth rate (r),Mobility (m),Mobility classification,Movement source,Movement information notes and references
+1,Beryx splendens,Berycidae,Splendid alfonsino,0.242,0.3,habitat_deep,FB,"FB: “Adults inhabit the outer shelf (180 m) and slope to at least 1,300 m depth, probably moving further from the bottom at night; often found over seamounts (Ref. 9833) and underwater ridges (Ref. 33648).”"
+2,Thunnus alalunga,Scombridae,Albacore,0.139,0.9,hms,FB,
+3,Hippoglossoides platessoides,Pleuronectidae,American plaice,0.145,0.3,habitat_benthic,FB,
+4,Engraulis encrasicolus,Engraulidae,European anchovy,0.557,0.9,migratory,FB,"FB: “Tends to move further north and into surface waters in summer, retreating and descending in winter.”"
+5,Lophius budegassa,Lophiidae,Blackbellied angler,0.403,0.3,habitat_benthic,FB,
+6,Theragra chalcogramma,Gadidae,Alaska pollock,0.268,0.3,habitat_deep,REF,Secondary ref: (1)
+7,Atheresthes stomias,Pleuronectidae,Arrow-tooth flounder,0.193,0.3,habitat_benthic,FB,
+8,Engraulis anchoita,Engraulidae,Argentine anchovy,0.639,0.9,migratory,FB,FB: “Exhibits north-south and near shore-offshore migrations.”
+9,Merluccius hubbsi,Merlucciidae,Argentine hake,0.227,0.9,migratory,FB,"FB: “Migrate inshore during spring and summer, and offshore into deep water wintering areas after spawning; also undertake diel vertical migrations (Ref. 1371).”"
+10,Thunnus thynnus,Scombridae,Atlantic bluefin tuna,0.082,0.9,pelagic,IUCN,
+11,Hippoglossus hippoglossus,Pleuronectidae,Atlantic halibut,0.119,0.3,habitat_benthic,FB,
+12,Pleurogrammus monopterygius,Hexagrammidae,Atka mackerel,0.077,0.3,habitat_coastal,FB,
+13,Micropogonias undulatus,Sciaenidae,Atlantic croaker,0.874,0.3,habitat_coastal,FB,
+14,Dissostichus mawsoni,Nototheniidae,Antarctic toothfish,0.104,0.9,deep,FB,
+15,Arripis trutta,Arripidae,Australian salmon,0.286,0.3,habitat_coastal,FB,"FB: “Inhabit continental shelf waters including estuaries, bays and inlets (Ref. 6390). Found between depths of 30 m (Ref. 33616) and 39 m (Ref. 58489).”"
+16,Callinectes sapidus,Portunidae,blue crab,0.6,0.3,habitat_coastal,REF,“...net migratory speeds were on the order of 5 km day1.” Ref: (2)
+17,Pseudotolithus elongatus,Sciaenidae,Bobo croaker,0.263,0.3,habitat_coastal,FB,
+18,Macruronus novaezelandiae,Merlucciidae,Blue grenadier,0.099,0.9,deep,FB,FB: “Migrates southward in spring and summer and northward in winter (Ref. 1371)”
+19,Sebastes melanostomus,Sebastidae,Blackgill rockfish,0.057,0.3,habitat_deep,FB,"FB: “Found on soft bottom in deep water, but young in shallower areas (Ref. 2850).”"
+20,Brachydeuterus auritus,Haemulidae,Bigeye grunt,0.674,0.3,habitat_coastal,IUCN,
+21,Merluccius polli,Merlucciidae,Benguela hake,0.234,0.3,habitat_deep,FB,
+22,Thunnus obesus,Scombridae,Bigeye tuna,0.236,0.9,pelagic,IUCN,
+23,Epigonus telescopus,Epigonidae,Black cardinal fish,0.097,0.3,habitat_deep,FB,FB: “Adults benthic or benthopelagic on the continental slopes... Non-territorial.”
+24,Allocyttus niger,Oreosomatidae,Black oreo,0.065,0.3,habitat_deep,FB,
+25,Sebastes melanops,Sebastidae,Black rockfish,0.085,0.3,habitat_reef,FB,
+26,Pomatomus saltatrix,Pomatomidae,Bluefish,0.525,0.9,migratory,FB,
+27,Sebastes mystinus,Sebastidae,Blue rockfish,0.104,0.3,habitat_reef,FB,
+28,Scomber australasicus,Scombridae,Blue mackerel,0.571,0.9,hms,FB,
+29,Makaira nigricans,Istiophoridae,Blue marlin,0.268,0.9,hms,FB,
+30,Sebastes rufus,Sebastidae,Bank rockfish,0.086,0.3,habitat_benthic,FB,FB: “Adults demersal and semi-pelagic (Ref. 36715)”
+31,Hyperoglyphe antarctica,Centrolophidae,Bluenose warehou,0.181,0.3,habitat_reef,FB,
+32,Sebastes paucispinis,Sebastidae,Bocaccio rockfish,0.106,0.3,habitat_reef,FB,
+33,Ethmalosa fimbriata,Clupeidae,Bonga shad,0.691,0.3,habitat_coastal,FB,
+34,Centropristis striata,Serranidae,Black seabass,0.391,0.3,habitat_reef,FB,
+35,Carcharhinus limbatus,Carcharhinidae,Blacktip shark,0.099,0.9,hms,FB,
+36,Peprilus triacanthus,Stromateidae,Atlantic butterfish,0.7,0.9,pelagic,FB,
+37,Micromesistius poutassou,Gadidae,Blue whiting,0.265,0.9,migratory,FAO,
+38,Scorpaenichthys marmoratus,Cottidae,Cabezon,0.322,0.3,habitat_benthic,FB,
+39,Mallotus villosus,Osmeridae,Capelin,0.138,0.9,migratory,FB,
+40,Merluccius capensis,Merlucciidae,Shallow-water Cape hake,0.138,0.9,migratory,FB,FB: “Migrates southward in the spring and northward in autumn (Ref. 1371).”
+41,Sebastes goodei,Sebastidae,Chilipepper rockfish,0.093,0.3,habitat_reef,FB,
+42,Trachurus trecae,Carangidae,Cunene horse mackerel,0.479,0.9,pelagic,FB,
+43,Trachurus murphyi,Carangidae,Chilean jack mackerel,0.247,0.9,pelagic,FB,
+44,Scomber japonicus,Scombridae,Chub mackerel,0.398,0.9,hms,FB,
+45,Gadus morhua,Gadidae,Atlantic cod,0.369,0.9,migratory,FAO,"FAO: “Although some groups of small cod are relatively stationary, individuals or groups may perform astonishingly long migrations.”"
+46,Pagellus erythrinus,Sparidae,Common pandora,0.467,0.3,habitat_reef,FB,
+47,Jasus lalandii,Palinuridae,Cape rock lobster,0.425,0.3,habitat_benthic,REF,Secondary ref: (3)
+48,Sebastes pinniger,Sebastidae,Canary rockfish,0.039,0.3,habitat_reef,FB,
+49,Trachurus capensis,Carangidae,Cape horse mackerel,0.282,0.9,pelagic,FB,
+50,Brosme brosme,Lotidae,Tusk,0.105,0.3,habitat_benthic,FB,
+51,Sebastes crameri,Sebastidae,Darkblotched rockfish,0.053,0.3,habitat_benthic,FB,
+52,Parapenaeus longirostris,Penaeidae,deep-water rose shrimp,1.03,0.3,habitat_benthic,SLB,
+53,Microstomus pacificus,Pleuronectidae,Dover sole,0.09,0.3,habitat_benthic,FB,
+54,Sebastes variabilis,Sebastidae,NA,0.083,0.3,habitat_benthic,FB,
+55,Hippoglossoides elassodon,Pleuronectidae,Flathead sole,0.18,0.3,habitat_benthic,FB,
+56,Lepidorhombus boscii,Scophthalmidae,Four-spot megrim,0.513,0.3,habitat_benthic,FB,
+57,Caranx rhonchus,Carangidae,False scad,0.643,0.3,habitat_coastal,FB,
+58,Mycteroperca microlepis,Serranidae,Gag,0.177,0.3,habitat_reef,FB,
+59,Rexea solandri,Gempylidae,Silver gemfish,0.235,0.3,migratory,FB,FB: “Dense schools of pre-spawners migrate along the continental slope at about 400 m during winter (Ref. 9563).”
+60,Phycis blennoides,Phycidae,Greater forkbeard,0.397,0.9,migratory,REF,Secondary ref: (4) “Young are more coastal and found on the continental shelf while adults migrate along the slope.”
+61,Reinhardtius hippoglossoides,Pleuronectidae,Greenland halibut,0.172,0.3,habitat_benthic,FB,
+62,Sebastes carnatus,Sebastidae,Gopher rockfish,0.086,0.1,territorial,FB,FB: “Inhabit holes or crevices in rocky areas (Ref. 2850).  Territorial (Ref. 2850)”
+63,Seriola dumerili,Carangidae,Greater amberjack,0.451,0.3,habitat_reef,FB,
+64,Sebastes elongatus,Sebastidae,Greenstriped rockfish,0.092,0.3,habitat_benthic,FB,
+65,Aristaeomorpha foliacea,Aristeidae,giant red shrimp,0.47,0.3,habitat_deep,SLB,
+66,Sebastes chlorostictus,Sebastidae,Greenspotted rockfish,0.086,0.3,habitat_benthic,FB,
+67,Kathetostoma giganteum,Uranoscopidae,Giant stargazer,0.286,0.1,sedentary,FB,
+68,Penaeus semisulcatus,Penaeidae,green tiger prawn,1.18,0.9,migratory,REF,"Secondary ref: (5) “Tagging studies by previous workers indicated that adults of P. semisulcatus also migrate offshore to deeper water as they mature (FAO, 1980; Farmer and Al-Attar, 1981; Muhammad et al., 1981; Somers and Kirkwood, 1984)”"
+69,Melanogrammus aeglefinus,Gadidae,Haddock,0.302,0.9,migratory,FB,
+70,Merluccius merluccius,Merlucciidae,European hake,0.31,0.3,habitat_deep,FB,
+71,Clupea harengus,Clupeidae,Atlantic herring,0.216,0.9,migratory,FB,FB: “Herring schools move between spawning and wintering grounds in coastal areas and feeding grounds in open water by following migration patterns learned from earlier year classes (Ref. 88171).”
+72,Clupea pallasii,Clupeidae,Pacific herring,0.56,0.3,habitat_coastal,FB,FB: “non-migratory”
+73,Trachurus trachurus,Carangidae,Atlantic horse mackerel,0.412,0.9,pelagic,FB,
+74,Illex illecebrosus,Ommastrephidae,northern shortfin squid,0.76,0.9,pelagic,IUCN,
+75,Engraulis japonicus,Engraulidae,Japanese anchovy,0.796,0.9,pelagic,FB,"FB: “Occurs in large schools near the surface, mainly in coastal waters but as far out as over 1,000 km from the shore.”"
+76,Trachurus japonicus,Carangidae,Japanese jack mackerel,0.601,0.9,pelagic,FB,
+77,Hexagrammos decagrammus,Hexagrammidae,Kelp greenling,0.341,0.3,habitat_reef,FB,
+78,Genypterus capensis,Ophidiidae,Kingklip,0.182,0.3,habitat_benthic,FB,
+79,Scomberomorus cavalla,Scombridae,King mackerel,0.423,0.9,hms,FB,"FB: “Large schools have been found to migrate over considerable distances along the Atlantic US coast, water temperature permitting.”"
+80,Dentex macrophthalmus,Sparidae,Large-eye dentex,0.46,0.3,habitat_coastal,FB,
+81,Ophiodon elongatus,Hexagrammidae,Lingcod,0.143,0.9,migratory,FB,FB: “Both migratory and non-migratory populations exist (Ref. 6885).”
+82,Raja rhina,Rajidae,Longnose skate,0.068,0.3,habitat_benthic,FB,
+83,Homarus americanus,Nephropidae,American lobster,0.57,0.3,habitat_benthic,SLB,"SLB: “Migration does not occur, or only to a limited scale (Ref. 4).”"
+84,Sebastolobus altivelis,Sebastidae,Longspine thornyhead,0.095,0.3,habitat_deep,REF,Secondary ref: (6)
+85,Scomber scombrus,Scombridae,Atlantic mackerel,0.271,0.9,hms,FB,FB: “They overwinter in deeper waters but move closer to shore in spring when water temperatures range between 11? and 14?C.”
+86,Lepidorhombus whiffiagonis,Scophthalmidae,Megrim,0.443,0.3,habitat_benthic,FB,
+87,Brevoortia patronus,Clupeidae,Gulf menhaden,0.843,0.3,habitat_coastal,FAO,
+88,Brevoortia tyrannus,Clupeidae,Atlantic menhaden,0.724,0.9,migratory,FAO,FAO: “north/south migrations (spring and summer versus autumn) occur”
+89,Trachurus mediterraneus,Carangidae,Mediterranean horse mackerel,0.393,0.9,pelagic,FB,
+90,Lophius americanus,Lophiidae,American angler,0.343,0.3,habitat_benthic,FB,
+91,Nemadactylus macropterus,Cheilodactylidae,Tarakihi,0.107,0.3,habitat_coastal,REF,Secondary ref: (7)
+92,Mugil cephalus,Mugilidae,Flathead grey mullet,0.277,0.3,habitat_coastal,FB,
+93,Nephrops norvegicus,Nephropidae,Norway lobster,0.52,0.1,sedentary,SLB,SLB: “Sedentary (Ref. 94799). Inhabits muddy bottoms in which it digs its burrows.”  “Burrowing.” Ref: (8)
+94,Trisopterus esmarkii,Gadidae,Norway pout,0.616,0.9,migratory ,FAO,"FAO: “Migrates for spawning between the Shetland Islands and Norway and out of the Skagerrak, the mayor spawning grounds being located between NW Scotland, Norway, Faeroe Islands and Iceland.”"
+95,Sebastes polyspinis,Sebastidae,Northern rockfish,0.05,0.3,habitat_benthic,FB,
+96,Genypterus blacodes,Ophidiidae,Pink cusk-eel,0.131,0.3,habitat_benthic,FB,
+97,Octopus vulgaris,Octopodidae,common octopus,0.81,0.3,habitat_reef,SLB,
+98,Paralichthys olivaceus,Paralichthyidae,Bastard halibut,0.874,0.3,habitat_benthic,FAO,
+99,Hoplostethus atlanticus,Trachichthyidae,Orange roughy,0.161,0.1,sedentary,FB,"FB: “Based on parasite and trace-element analyses, orange roughy  is a sedentary species with little movement between fish-management zones (Ref. 27089)”"
+100,Thunnus orientalis,Scombridae,Pacific bluefin tuna,0.192,0.9,hms,FB,
+101,Engraulis ringens,Engraulidae,Anchoveta,0.649,0.9,pelagic,FB,
+102,Pandalus borealis,Pandalidae,northern shrimp,0.58,0.9,deep,REF,Secondary ref: (9)
+103,Macruronus magellanicus,Merlucciidae,Patagonian grenadier,0.102,0.9,migratory,REF,Secondary ref: (10)
+104,Gadus macrocephalus,Gadidae,Pacific cod,0.255,0.3,habitat_deep,FAO,"FAO: “Pacific cod does not undertake migrations as extensive as the Atlantic species but moves only for short distances, such as to and from the shore, or from one bank to the other within a limited region.”"
+105,Sebastes alutus,Sebastidae,Pacific ocean perch,0.048,0.3,habitat_benthic,FB,
+106,Panopea generosa,Hiatellidae,Pacific geoduck,0.37,0.1,sedentary,SLB,
+107,Merluccius productus,Merlucciidae,North Pacific hake,0.12,0.9,migratory,FB,FB: “Adults live in large schools in waters overlying the continental shelf and slope except during the spawning season when they are found several hundred miles seaward (Ref. 1371).”
+108,Pleuronectes platessa,Pleuronectidae,European plaice,0.26,0.9,migratory,FB,
+109,Pollachius virens,Gadidae,Saithe,0.293,0.9,migratory,FAO,"FAO: “Migrations are known to occur, especially for spawning, to coastal waters in spring and to deeper waters in winter.”"
+110,Lamna nasus,Lamnidae,Porbeagle,0.044,0.9,migratory,FB,
+111,Trisopterus minutus,Gadidae,Poor cod,0.709,0.3,habitat_benthic,FB,
+112,Eopsetta jordani,Pleuronectidae,Petrale sole,0.113,0.3,habitat_benthic,FB,
+113,Dissostichus eleginoides,Nototheniidae,Patagonian toothfish,0.107,0.9,deep,FB,
+114,Pagrus major,Sparidae,Red seabream,0.389,0.3,habitat_reef,FB,
+115,Pagellus bogaraveo,Sparidae,Blackspot seabream,0.318,0.3,habitat_reef,FB,
+116,Chaceon quinquedens,Geryonidae,red deepsea crab,0.42,0.3,habitat_benthic,SLB,
+117,Aristeus antennatus,Aristeidae,blue and red shrimp,0.48,0.3,habitat_deep,SLB,
+118,Glyptocephalus zachirus,Pleuronectidae,Rex sole,0.187,0.3,habitat_benthic,FB,
+119,Sebastes aleutianus,Sebastidae,Rougheye rockfish,0.038,0.3,habitat_benthic,FB,
+120,Epinephelus morio,Serranidae,Red grouper,0.215,0.3,habitat_benthic,FB,
+121,Mullus barbatus,Mullidae,Red mullet,0.68,0.3,habitat_benthic,FB,
+122,Cancer irroratus,Cancridae,rock crab,0.46,0.1,sedentary,SLB,
+123,Pagellus bellottii,Sparidae,Red pandora,0.678,0.3,habitat_reef,FB,
+124,Jasus edwardsii,Palinuridae,red rock lobster,0.52,0.3,habitat_benthic,REF,"Secondary ref: (11) “Of 32 large spiny lobsters tracked with acoustic tags for 14-355 days in north-east New Zealand, 25 moved detectable distances (>0.1 km) from their tag site while being monitored. Individual lobsters moved up to 12.3 km over a 12-month period but the furthest distance from a tagging site was only 3.1 km.”"
+125,Sardinella aurita,Clupeidae,Round sardinella,0.674,0.3,habitat_coastal,IUCN,IUCN: “This pelagic species schools in subtropical coastal waters from inshore to the shelf edge.”
+126,Lutjanus campechanus,Lutjanidae,Northern red snapper,0.354,0.3,habitat_reef,FB,
+127,Lepidopsetta bilineata,Pleuronectidae,Rock sole,0.174,0.3,habitat_benthic,FB,
+128,Anoplopoma fimbria,Anoplopomatidae,Sablefish,0.035,0.9,deep,FB,"FB: “Generally localized, but some juveniles have been found to migrate over 2,000 miles in 6 or 7 years (Ref. 28499).”"
+129,Istiophorus albicans,Istiophoridae,Atlantic sailfish,0.578,0.9,hms,FB,
+130,Sardinops sagax,Clupeidae,South American pilchard,0.349,0.9,migratory,FB,"FB: “In the California region, pilchards make northward migrations early in summer and travel back south again in autumn. With each year of life, the migration becomes farther (Ref. 6885).”"
+131,Sardina pilchardus,Clupeidae,European pilchard,0.528,0.9,pelagic,FAO,"FAO: “Breeds at 20 to 25 m, near the shore or as much as 100 km out to sea”"
+132,Cololabis saira,Scomberesocidae,Pacific saury,0.461,0.9,pelagic,FAO,"FAO: “migrates seasonally to southern Japan and adjacent waters in winter, and Hokkaido and the Kuril Islands in summer.”"
+133,Sebastes jordani,Sebastidae,Shortbelly rockfish,0.096,0.3,habitat_benthic,FB,
+134,Thunnus maccoyii,Scombridae,Southern bluefin tuna,0.102,0.9,hms,FB,
+135,Micromesistius australis,Gadidae,Southern blue whiting,0.139,0.9,migratory,FAO,"FAO: “In warm summers, the population of the Falkland/Malvinas current (on the Patagonian shelves of Argentina and southern Chile) migrates southward to S. Georgia, S. Shetland Islands, Elephant Island and the northern part of the Antarctic Peninsula.”"
+136,Placopecten magellanicus,Pectinidae,deep sea scallop,0.56,0.1,sedentary,SLB,
+137,Stenotomus chrysops,Sparidae,Scup,0.348,0.3,habitat_reef,FB,
+138,Squalus acanthias,Squalidae,Picked dogfish,0.044,0.9,migratory,FB,"FB: “Transoceanic migrations recorded, but rare (Ref. 88864).”"
+139,Paralichthys dentatus,Paralichthyidae,Summer flounder,1.336,0.3,habitat_benthic,FB,
+140,Isurus oxyrinchus,Lamnidae,Shortfin mako,0.09,0.9,migratory,FB,
+141,Merluccius bilinearis,Merlucciidae,Silver hake,0.154,0.9,migratory,FB,FB: “Exhibits seasonal onshore-offshore migration (Ref. 9988).”
+142,Seriolella punctata,Centrolophidae,Silver warehou,0.261,0.9,migratory,FB,"FB: “During spring-summer in New Zealand, adult and juvenile fish migrate to feed along the continental slope off the east and southeast coast of the South Island (Ref. 9072).”"
+143,Katsuwonus pelamis,Scombridae,Skipjack tuna,0.504,0.9,pelagic,IUCN,
+144,Pseudocyttus maculatus,Oreosomatidae,Smooth oreo dory,0.11,0.3,habitat_deep,FB,
+145,Squilla mantis,Squillidae,spottail mantis shrimp,0.56,0.1,sedentary,SLB,
+146,Mullus surmuletus,Mullidae,Surmullet,0.656,0.3,habitat_benthic,FB,
+147,Chionoecetes opilio,Oregoniidae,snow crab,0.58,0.3,habitat_benthic,SLB,
+148,Sebastes diploproa,Sebastidae,Splitnose rockfish,0.086,0.3,habitat_benthic,FB,
+149,Solea solea,Soleidae,Common sole,0.314,0.3,habitat_benthic,FB,
+150,Merluccius australis,Merlucciidae,Southern hake,0.056,0.9,migratory,FB,FB: “Adults probably migrate southward during the southern summer for feeding and return to the north in winter for spawning (Ref. 1371)”
+151,Scomberomorus maculatus,Scombridae,Atlantic Spanish mackerel,0.553,0.9,hms,FB,FB: “Migrates in large schools over great distances along the shore.”
+152,Scomberomorus niphonius,Scombridae,Japanese Spanish mackerel,0.526,0.9,hms,FB,FB: “Undergoes a spawning migration in spring (March to June) and a feeding migration in fall (September to November) in the Inland Sea of Japan.”
+153,Merluccius gayi,Merlucciidae,South Pacific hake,0.418,0.9,migratory,FB,FB: “Moves to southern coastal areas in summer and migrates to northern deeper waters (200-500 m depth) in winter and spring (Ref. 27363).”
+154,Sprattus sprattus,Clupeidae,European sprat,0.476,0.9,migratory,FAO,"FAO: “Some spawing almost throughout the year, near to the coast or up to 100 km out to sea”"
+155,Squalus suckleyi,Squalidae,Pacific spiny dogfish,0.024,0.9,migratory,FB,"FB: “It appears to prefer water temperatures between 7 and 15?C, and often makes longitudinal and depth migrations to follow this temperature preference (Ref. 48844).”"
+156,Palinurus gilchristi,Palinuridae,Southern spiny lobster,0.22,0.3,habitat_benthic,REF,"Secondary ref: (12) “Overall, 547 (25.8%) tagged lobsters of both sexes moved >20 km within or between sites.”"
+157,Sebastolobus alascanus,Sebastidae,Shortspine thornyhead,0.054,0.3,habitat_benthic,FB,bathydemersal
+158,Platichthys stellatus,Pleuronectidae,Starry flounder,0.256,0.3,habitat_benthic,IUCN,
+159,Morone saxatilis,Moronidae,Striped bass,0.255,0.3,habitat_coastal,FB,
+160,Spisula solidissima,Mactridae,Atlantic surfclam,0.47,0.1,sedentary,SLB,
+161,Xiphias gladius,Xiphiidae,Swordfish,0.316,0.9,hms,FB,
+162,Raja clavata,Rajidae,Thornback ray,0.066,0.3,habitat_benthic,FB,
+163,Galeoides decadactylus,Polynemidae,Lesser African threadfin,0.51,0.3,habitat_coastal,FB,
+164,Lopholatilus chamaeleonticeps,Malacanthidae,Great northern tilefish,0.145,0.1,sedentary,IUCN,"IUCN: “This bottom dwelling species occurs mostly on silt-clay substrate and is more common where there is suitable substrate for burrow construction, such as scour depressions around boulders or rubble piles; also often near submarine canyons (Valentine et al. 1980, Able et al. 1982, Low and Ulrich 1983, Grossman et al. 1985).”"
+165,Pseudocaranx dentex,Carangidae,White trevally,0.382,0.3,habitat_coastal,FB,
+166,Rhomboplites aurorubens,Lutjanidae,Vermilion snapper,0.393,0.3,habitat_reef,FB,or habitat_deep
+167,Seriolella brama,Centrolophidae,Common warehou,0.25,0.3,habitat_coastal,FB,
+168,Cynoscion regalis,Sciaenidae,Squeteague,0.331,0.3,habitat_coastal,FB,
+169,Urophycis tenuis,Phycidae,White hake,0.178,0.9,migratory,REF,"Secondary ref: (13) “Mature U. tenuis migrate inshore in the northern Gulf of Maine in the summer, disperse in the fall, and move into the deepest area of the Gulf in winter.”"
+170,Merlangius merlangus,Gadidae,Whiting,0.396,0.9,migratory,FB,
+171,Scophthalmus aquosus,Scophthalmidae,Windowpane flounder,0.592,0.3,habitat_benthic,FB,
+172,Pseudopleuronectes americanus,Pleuronectidae,Winter flounder,0.307,0.3,habitat_benthic,FB,
+173,Glyptocephalus cynoglossus,Pleuronectidae,Witch flounder,0.15,0.3,habitat_benthic,FB,
+174,Sebastes entomelas,Sebastidae,Widow rockfish,0.086,0.3,habitat_reef,FB,
+175,Buccinum undatum,Buccinidae,waved whelk,0.57,0.1,sedentary,SLB,
+176,Limanda ferruginea,Pleuronectidae,Yellowtail flounder,0.327,0.3,habitat_benthic,FB,
+177,Sebastes ruberrimus,Sebastidae,Yelloweye rockfish,0.036,0.3,habitat_reef,FB,
+178,Thunnus albacares,Scombridae,Yellowfin tuna,0.372,0.9,hms,FB,
+179,Zearaja chilensis,Rajidae,Yellownose skate,0.037,0.3,habitat_benthic,FB,
+180,Limanda aspera,Pleuronectidae,Yellowfin sole,0.196,0.3,habitat_benthic,FB,
+181,Sebastes flavidus,Sebastidae,Yellowtail rockfish,0.059,0.3,habitat_reef,FB,
+182,Polydactylus quadrifilis,Polynemidae,Giant African threadfin,0.564,0.3,habitat_coastal,FB,
+183,Pseudopercis semifasciata,Pinguipedidae,Argentinian sandperch,0.637,0.3,habitat_benthic,FB,
+184,Cottoperca gobio,Bovichtidae,Channel bull blenny,0.63,0.1,territorial,REF,Secondary ref: (14)
+185,Cilus gilberti,Sciaenidae,Corvina drum,0.625,0.3,habitat_benthic,IUCN,
+186,Cynoscion guatucupa,Sciaenidae,Stripped weakfish,0.547,0.3,habitat_coastal,FB,
+187,Limanda limanda,Pleuronectidae,Common dab,0.461,0.3,habitat_benthic,FB,
+188,Liza klunzingeri,Mugilidae,Klunzinger's mullet,0.49,0.3,habitat_coastal,IUCN,"IUCN: “Liza klunzingeri lives in shallow coastal waters. In Iraq, Liza klunzingeri is known to ascend rivers for feeding (M. Almukhtar pers. comm. 2014).”"
+189,Dipturus innominatus,Rajidae,New Zealand smooth skate,0.077,0.3,habitat_benthic,FB,
+190,Alectis alexandrinus,Carangidae,Alexandria pompano,0.28,0.3,habitat_coastal,FB,
+191,Coelorinchus chilensis,Macrouridae,Chilean grenadier,0.207,0.3,habitat_deep,FB,FB: “Marine; bathydemersal; non-migratory”
+192,Larimichthys polyactis,Sciaenidae,Yellow croaker,0.547,0.3,habitat_coastal,FB,
+193,Haemulon plumierii,Haemulidae,White grunt,0.579,0.3,habitat_reef,FB,
+194,Salvelinus alpinus,Salmonidae,Arctic char,0.2,0.9,migratory,FB,
+195,Scolopsis taeniata,Nemipteridae,Black-streaked monocle bream,1.108,0.3,habitat_reef,FB,
+196,Ilisha africana,Pristigasteridae,West African ilisha,1.11,0.3,habitat_coastal,IUCN,"IUCN: “This species occurs in inshore waters, along sandy beaches, in estuaries to nearly freshwater”"
+197,Percophis brasiliensis,Percophidae,Brazilian flathead,0.258,0.3,habitat_coastal,REF,Secondary ref: (15)
+198,Platycephalus indicus,Platycephalidae,Bartail flathead,0.479,0.3,habitat_benthic,FB,
+199,Salmo trutta,Salmonidae,Sea trout,0.746,0.9,migratory,FB,
+200,Sarda chiliensis,Scombridae,Eastern Pacific bonito,0.474,0.9,pelagic,IUCN,
+201,Pennahia argentata,Sciaenidae,Silver croaker,0.805,0.3,habitat_coastal,FB,
+202,Bothus pantherinus,Bothidae,Leopard flounder,0.786,0.3,habitat_benthic,FB,
+203,Mugil curema,Mugilidae,White mullet,0.52,0.3,habitat_coastal,FB,
+204,Seriola rivoliana,Carangidae,Longfin yellowtail,0.506,0.9,pelagic,REF,Secondary ref: (16)
+205,Trachurus lathami,Carangidae,Rough scad,0.704,0.9,pelagic,FB,
+206,Coryphaena hippurus,Coryphaenidae,Common dolphinfish,0.796,0.9,hms,FB,
+207,Lutjanus purpureus,Lutjanidae,Southern red snapper,0.308,0.3,habitat_reef,FB,
+208,Diapterus auratus,Gerreidae,Irish mojarra,1.367,0.3,habitat_coastal,FB,
+209,Larimus breviceps,Sciaenidae,Shorthead drum,0.717,0.3,habitat_coastal,FB,
+210,Mugil liza,Mugilidae,Lebranche mullet,0.478,0.9,migratory,FB,FB: “Appear to undergo trophic migrations along the coasts (Ref. 35237).”
+211,Aphia minuta,Gobiidae,Transparent goby,1.701,0.3,habitat_coastal,REF,Secondary ref: (17)
+212,Belone belone,Belonidae,Garfish,0.479,0.9,pelagic,FB,FB: “Lives close to the surface and has a migratory pattern similar to the mackerel (Ref. 35388).”
+213,Epinephelus striatus,Serranidae,Nassau grouper,0.263,0.3,habitat_reef,FB,
+214,Molva molva,Lotidae,Ling,0.112,0.3,habitat_benthic,FB,or habitat_deep
+215,Pollachius pollachius,Gadidae,Pollack,0.437,0.9,habitat_coastal,FB,"FB: “Found in inshore waters but also down to 200 m depth, in areas with hard bottoms.”"
+216,Acanthocybium solandri,Scombridae,Wahoo,0.523,0.9,pelagic,FB,
+217,Auxis thazard,Scombridae,Frigate tuna,0.704,0.9,pelagic,FB,
+218,Capros aper,Caproidae,Boarfish,0.435,0.3,habitat_reef,FB,
+219,Caranx hippos,Carangidae,Crevalle jack,0.871,0.3,habitat_reef,FB,"FB: “Generally in neritic waters over the continental shelf (Ref. 5217), from the coastline, where it is common on shallow flats, to offshore waters (Ref. 57392).”"
+220,Cepola macrophthalma,Cepolidae,Red bandfish,0.663,0.1,sedentary,FB,FB: “Found on sand and mud bottom (Ref. 26999). Lives in vertical burrows but may be found swimming in midwater.”
+221,Chanos chanos,Chanidae,Milkfish,0.566,0.3,habitat_reef,FB,FB: “They occur in small to large schools near the coasts or around islands where reefs are well developed.”
+222,Ctenolabrus rupestris,Labridae,Goldsinny-wrasse,0.492,0.3,habitat_reef,FB,
+223,Dicentrarchus labrax,Moronidae,European seabass,0.531,0.3,habitat_coastal,REF,Secondary ref: (18)
+224,Euthynnus affinis,Scombridae,Kawakawa,0.631,0.9,pelagic,IUCN,
+225,Euthynnus alletteratus,Scombridae,Little tunny,0.33,0.9,hms,IUCN,
+226,Eutrigla gurnardus,Triglidae,Grey gurnard,0.182,0.3,habitat_benthic,FB,
+227,Helicolenus dactylopterus,Sebastidae,Blackbelly rosefish,0.149,0.3,habitat_benthic,IUCN,
+228,Istiophorus platypterus,Istiophoridae,Indo-Pacific sailfish,0.466,0.9,hms,FB,
+229,Gymnosarda unicolor,Scombridae,Dogtooth tuna,0.597,0.9,pelagic,FAO,
+230,Lutjanus guttatus,Lutjanidae,Spotted rose snapper,0.37,0.3,habitat_reef,FB,
+231,Lutjanus kasmira,Lutjanidae,Common bluestripe snapper,0.454,0.3,habitat_reef,FB,
+232,Lutjanus malabaricus,Lutjanidae,Malabar blood snapper,0.3,0.3,habitat_reef,FB,
+233,Lutjanus peru,Lutjanidae,Pacific red snapper,0.269,0.3,habitat_reef,FB,
+234,Lutjanus quinquelineatus,Lutjanidae,Five-lined snapper,0.327,0.3,habitat_reef,FB,
+235,Lutjanus synagris,Lutjanidae,Lane snapper,0.661,0.3,habitat_reef,FB,
+236,Lutjanus vivanus,Lutjanidae,Silk snapper,0.252,0.3,habitat_reef,FB,
+237,Ocyurus chrysurus,Lutjanidae,Yellowtail snapper,0.474,0.3,habitat_reef,FB,
+238,Orcynopsis unicolor,Scombridae,Plain bonito,0.597,0.9,hms,FB,
+239,Rastrelliger brachysoma,Scombridae,Short mackerel,1.172,0.9,pelagic,IUCN,
+240,Rastrelliger kanagurta,Scombridae,Indian mackerel,1.13,0.9,pelagic,FAO,
+241,Sarda orientalis,Scombridae,Striped bonito,0.341,0.9,pelagic,IUCN,
+242,Sarda sarda,Scombridae,Atlantic bonito,0.703,0.9,hms,FB,
+243,Scomberomorus commerson,Scombridae,Narrow-barred Spanish mackerel,0.543,0.9,hms,FB,"FB: “Known to undertake lengthy long-shore migrations, but permanent resident populations also seem to exist.”"
+244,Scomberomorus guttatus,Scombridae,Indo-Pacific king mackerel,0.5,0.9,hms,FB,FB: “A pelagic migratory fish inhabiting coastal waters at depths between 15-200 m”
+245,Scomberomorus lineolatus,Scombridae,Streaked seerfish,0.298,0.9,pelagic,IUCN,
+246,Scomberomorus regalis,Scombridae,Cero,0.603,0.9,pelagic,IUCN,
+247,Scomberomorus tritor,Scombridae,West African Spanish mackerel,1.01,0.9,pelagic,IUCN,
+248,Thunnus atlanticus,Scombridae,Blackfin tuna,0.411,0.9,hms,FB,
+249,Thunnus tonggol,Scombridae,Longtail tuna,0.222,0.9,pelagic,IUCN,
+250,Acanthistius brasilianus,Serranidae,Argentine seabass,0.393,0.3,habitat_benthic,IUCN,
+251,Albula vulpes,Albulidae,Bonefish,0.463,0.3,habitat_lagoon,FB,
+252,Glossanodon semifasciatus,Argentinidae,Deep-sea smelt,0.519,0.9,pelagic,FB,
+253,Arripis georgianus,Arripidae,Ruff,0.388,0.3,habitat_coastal,FB,"FB: “Usually found inshore in bays and estuaries over seagrass beds or near areas of seaweed (e.g. kelp), on rocky reefs, and along ocean beaches. Juveniles are found in inshore coastal waters, bays and inlets (Ref. 6390).”"
+254,Conger myriaster,Congridae,Whitespotted conger,0.27,0.1,habitat_benthic,FB,
+255,Boops boops,Sparidae,Bogue,0.471,0.9,pelagic,FB,
+256,Boreogadus saida,Gadidae,Polar cod,0.371,0.9,migratory,FAO,"FAO: “also found at 50-175 km offshore in the Beaufort and Chulkchi Seas, at depths of 40 to 400 m... Migration patterns are unknown, except for a prespawning migration to nearshore waters in late summer in the Beaufort Sea.”"
+257,Brama brama,Bramidae,Atlantic pomfret,0.254,0.9,migratory,FB,"FB: “Seasonal migrant occurring in small schools, movements apparently temperature-related.”"
+258,Centropomus undecimalis,Centropomidae,Common snook,0.642,0.3,habitat_coastal,FB,"FB: “Adults inhabit coastal waters, estuaries and lagoons, penetrating into freshwater; usually at depths less than 20 m (Ref. 3713).”"
+259,Chloroscombrus chrysurus,Carangidae,Atlantic bumper,0.817,0.3,habitat_coastal,FB,
+260,Conger conger,Congridae,European conger,0.208,0.3,habitat_benthic,FB,
+261,Conger oceanicus,Congridae,American conger,0.27,0.1,territorial,IUCN,"IUCN: “is usually associated with structured habitats such as piers, wrecks, jetties, reefs, or burrows shared with tilefish, Lopholatilus chamaeleonticeps (Able and Fahay 1998, Collette and Klein-MacPhee 2002, Correia et al. 2004).”"
+262,Coregonus albula,Salmonidae,Vendace,0.421,0.9,migratory,FB,
+263,Decapterus russelli,Carangidae,Indian scad,1.233,0.9,pelagic,FB,
+264,Dicentrarchus punctatus,Moronidae,Spotted seabass,0.493,0.3,habitat_coastal,FB,
+265,Eleginus gracilis,Gadidae,Saffron cod,0.307,0.3,habitat_coastal,FAO,FAO: “Migrations are not extensive.”
+266,Eleutheronema tetradactylum,Polynemidae,Fourfinger threadfin,0.644,0.3,habitat_coastal,FB,
+267,Harpadon nehereus,Synodontidae,Bombay-duck,0.452,0.3,habitat_benthic,FB,
+268,Isacia conceptionis,Haemulidae,Cabinza grunt,0.655,0.3,habitat_coastal,FB,
+269,Lactarius lactarius,Lactariidae,False trevally,0.894,0.3,habitat_coastal,FB,
+270,Lates calcarifer,Latidae,Barramundi,0.707,0.3,habitat_coastal,FB,
+271,Lutjanus gibbus,Lutjanidae,Humpback red snapper,0.436,0.3,habitat_reef,FB,
+272,Lutjanus griseus,Lutjanidae,Grey snapper,0.329,0.3,habitat_reef,FB,
+273,Lutjanus johnii,Lutjanidae,John's snapper,0.365,0.3,habitat_reef,FB,
+274,Megalaspis cordyla,Carangidae,Torpedo scad,0.855,0.9,pelagic,FB,"FB: “Adults are primarily oceanic, pelagic schooling species rarely seen on reefs (Ref. 48635, 90102).”"
+275,Megalops cyprinoides,Megalopidae,Indo-Pacific tarpon,0.22,0.3,habitat_coastal,FB,
+276,Mene maculata,Menidae,Moonfish,0.681,0.3,habitat_reef,FB,
+277,Menidia menidia,Atherinopsidae,Atlantic silverside,0.883,0.3,habitat_coastal,FB,
+278,Microgadus tomcod,Gadidae,Atlantic tomcod,0.461,0.3,habitat_coastal,FB,
+279,Muraenesox cinereus,Muraenesocidae,Daggertooth pike conger,0.409,0.1,sedentary,REF,Secondary ref: (19)
+280,Nemipterus virgatus,Nemipteridae,Golden threadfin bream,0.957,0.3,habitat_benthic,FB,
+281,Oncorhynchus gorbuscha,Salmonidae,Pink salmon,0.492,0.9,migratory,FB,
+282,Oncorhynchus keta,Salmonidae,Chum salmon,0.332,0.9,migratory,FB,
+283,Oncorhynchus kisutch,Salmonidae,Coho salmon,0.528,0.9,migratory,FB,
+284,Oncorhynchus masou,Salmonidae,Masu salmon,0.488,0.9,migratory,FB,
+285,Oncorhynchus nerka,Salmonidae,Sockeye salmon,0.343,0.9,migratory,FB,
+286,Oncorhynchus tshawytscha,Salmonidae,Chinook salmon,0.492,0.9,migratory,FB,
+287,Osmerus mordax,Osmeridae,Rainbow smelt,0.088,0.3,habitat_coastal,IUCN,
+288,Paralabrax humeralis,Serranidae,Peruvian rock seabass,0.275,0.3,habitat_benthic,IUCN,
+289,Parona signata,Carangidae,Parona leatherjacket,0.935,0.3,habitat_coastal,FB,
+290,Pentanemus quinquarius,Polynemidae,Royal threadfin,0.687,0.3,habitat_coastal,FB,
+291,Plectorhinchus mediterraneus,Haemulidae,Rubberlip grunt,0.295,0.3,habitat_benthic,IUCN,
+292,Polyprion americanus,Polyprionidae,Wreckfish,0.097,0.3,habitat_benthic,FB,or habitat_deep
+293,Pomadasys argenteus,Haemulidae,Silver grunt,0.806,0.3,habitat_coastal,FB,
+294,Salilota australis,Moridae,Tadpole codling,0.247,0.9,deep,FB,
+295,Sarpa salpa,Sparidae,Salema,0.511,0.3,habitat_reef,FB,
+296,Selar crumenophthalmus,Carangidae,Bigeye scad,1.356,0.9,pelagic,FB,FB: “Adults prefer clear oceanic waters around islands to neritic waters (Ref. 5217). Occasionally in turbid waters (Ref. 9283). Pelagic (Ref. 58302).”
+297,Selaroides leptolepis,Carangidae,Yellowstripe scad,1.612,0.3,habitat_coastal,FB,
+298,Selene dorsalis,Carangidae,African moonfish,0.655,0.3,habitat_coastal,FB,
+299,Selene setapinnis,Carangidae,Atlantic moonfish,0.895,0.3,habitat_coastal,FB,
+300,Trachinotus carolinus,Carangidae,Florida pompano,0.843,0.3,habitat_coastal,FB,
+301,Trachurus declivis,Carangidae,Greenback horse mackerel,0.29,0.9,pelagic,FB,
+302,Trachurus symmetricus,Carangidae,Pacific jack mackerel,0.238,0.9,pelagic,FB,
+303,Urophycis brasiliensis,Phycidae,Brazilian codling,0.375,0.3,habitat_benthic,FB,FB: “Marine; demersal; non-migratory”
+304,Urophycis chuss,Phycidae,Red hake,0.304,0.9,migratory,REF,"Secondary ref: (20) “Red hake make extensive seasonal, depth- and temperature-related migrations”"
+305,Zenopsis conchifer,Zeidae,Silvery John dory,0.246,0.3,habitat_reef,FB,
+306,Ablennes hians,Belonidae,Flat needlefish,0.581,0.3,habitat_coastal,FB,
+307,Amphichthys cryptocentrus,Batrachoididae,Bocon toadfish,0.572,0.1,sedentary,FB,FB: “Inhabits littoral (subtidal) waters; usually found on sandy or rock bottom; large fish may be found in waters less than 1 m of depth hiding in crevices or caves (Ref. 3273).”
+308,Archosargus probatocephalus,Sparidae,Sheepshead,0.61,0.3,habitat_reef,FB,
+309,Arctoscopus japonicus,Trichodontidae,Japanese sandfish,0.63,0.3,habitat_benthic,FB,
+310,Argyrops spinifer,Sparidae,King soldier bream,0.494,0.3,habitat_coastal,FB,
+311,Argyrosomus hololepidotus,Sciaenidae,Southern meagre,0.228,0.3,habitat_coastal,FB,
+312,Argyrosomus regius,Sciaenidae,Meagre,0.149,0.9,migratory,FB,FB: “Both adults and juveniles are migratory moving along shore or offshore-onshore in response to temperature change (Ref. 11025)”
+313,Argyrozona argyrozona,Sparidae,Carpenter seabream,0.338,0.3,habitat_reef,IUCN,"IUCN: “Tagging studies have shown that adults are fairly resident with a small percentage of fish that disperse (Brouwer et al. 2003, Griffiths and Wilke 2002) including some nomadic behaviour involving migrations of more than 100 km (Griffiths and Mann 2000).”"
+314,Atractoscion aequidens,Sciaenidae,Geelbeck croaker,0.312,0.3,habitat_coastal,FB,
+315,Atrobucca nibe,Sciaenidae,Blackmouth croaker,0.461,0.3,habitat_coastal,FB,
+316,Austroglossus microlepis,Soleidae,West coast sole,0.186,0.3,habitat_benthic,FB,
+317,Austroglossus pectoralis,Soleidae,Mud sole,0.268,0.3,habitat_benthic,FB,
+318,Brotula barbata,Ophidiidae,Bearded brotula,0.276,0.3,habitat_benthic,FB,
+319,Carcharhinus brachyurus,Carcharhinidae,Copper shark,0.069,0.9,hms,FB,
+320,Carcharhinus falciformis,Carcharhinidae,Silky shark,0.067,0.9,hms,FB,
+321,Carcharhinus longimanus,Carcharhinidae,Oceanic whitetip shark,0.093,0.9,hms,FB,
+322,Carcharhinus sorrah,Carcharhinidae,Spot-tail shark,0.181,0.9,hms,FB,
+323,Centrophorus granulosus,Centrophoridae,Gulper shark,0.044,0.9,deep,FB,
+324,Centrophorus squamosus,Centrophoridae,Leafscale gulper shark,0.031,0.9,deep,FB,
+325,Cephaloscyllium isabellum,Scyliorhinidae,Draughtsboard shark,0.188,0.3,habitat_reef,FB,"or habtiat_benthic; FB: “Found in crevices and caves of rocky reefs during the day, but may move to adjacent sandy areas at night”"
+326,Cetengraulis edentulus,Engraulidae,Atlantic anchoveta,0.508,0.3,habitat_coastal,FB,
+327,Cetengraulis mysticetus,Engraulidae,Pacific anchoveta,0.828,0.3,habitat_coastal,FB,FB: “Apparently not making long migrations along sandy or rocky areas.”
+328,Cheimerius nufar,Sparidae,Santer seabream,0.438,0.3,habitat_reef,FB,
+329,Chelidonichthys kumu,Triglidae,Bluefin gurnard,0.231,0.3,habitat_benthic,FB,
+330,Conodon nobilis,Haemulidae,Barred grunt,0.655,0.3,habitat_benthic,IUCN,
+331,Cynoscion analis,Sciaenidae,Peruvian weakfish,0.552,0.3,habitat_coastal,FB,
+332,Cynoscion nebulosus,Sciaenidae,Spotted weakfish,0.437,0.3,habitat_coastal,FB,
+333,Cynoscion striatus,Sciaenidae,Striped weakfish,0.562,0.3,habitat_reef,FOA,
+334,Dalatias licha,Dalatiidae,Kitefin shark,0.13,0.9,deep,FB,
+335,Dentex dentex,Sparidae,Common dentex,0.295,0.3,habitat_reef,FB,
+336,Drepane punctata,Drepaneidae,Spotted sicklefish,0.537,0.3,habitat_coastal,FB,
+337,Eleginops maclovinus,Eleginopsidae,Patagonian blennie,0.185,0.3,habitat_coastal,REF,Secondary ref: (21)
+338,Epinephelus aeneus,Serranidae,White grouper,0.173,0.9,migratory,FB,FB: “The seasonal migration of the species off the coast of Senegal is influenced by the seasonal upwelling off Senegal and Mauritania.”
+339,Etmopterus spinax,Etmopteridae,Velvet belly,0.042,0.3,deep,IUCN,
+340,Galeocerdo cuvier,Carcharhinidae,Tiger shark,0.076,0.9,hms,FB,"FB: “Highly migratory species, Annex I of the 1982 Convention on the Law of the Sea (Ref. 26139).”"
+341,Genyonemus lineatus,Sciaenidae,White croaker,0.625,0.3,habitat_benthic,IUCN,
+342,Hexanchus griseus,Hexanchidae,Bluntnose sixgill shark,0.164,0.9,deep,FB,
+343,Lepidopus caudatus,Trichiuridae,Silver scabbardfish,0.293,0.3,habitat_deep,FB,
+344,Lichia amia,Carangidae,Leerfish,0.935,0.3,habitat_coastal,FB,
+345,Lithognathus mormyrus,Sparidae,Sand steenbras,0.517,0.3,habitat_reef,FB,
+346,Macrodon ancylodon,Sciaenidae,King weakfish,0.617,0.3,habitat_coastal,FB,
+347,Menticirrhus littoralis,Sciaenidae,Gulf kingcroaker,0.552,0.3,habitat_coastal,FB,
+348,Menticirrhus saxatilis,Sciaenidae,Northern kingfish,0.498,0.3,habitat_coastal,FB,
+349,Naucrates ductor,Carangidae,Pilotfish,1.065,0.9,pelagic,FB,"FB: “Oceanic species with a semi-obligate commensal relationship with sharks, rays, other bony fishes and turtles (Ref. 5217).”"
+350,Oblada melanura,Sparidae,Saddled seabream,0.431,0.3,habitat_reef,FB,
+351,Oxynotus centrina,Oxynotidae,Angular roughshark,0.13,0.3,habitat_benthic,FB,
+352,Pagellus acarne,Sparidae,Axillary seabream,0.478,0.3,habitat_reef,FB,
+353,Pampus argenteus,Stromateidae,Silver pomfret,0.666,0.3,habitat_coastal,FB,
+354,Paralonchurus peruanus,Sciaenidae,Peruvian banded croaker,0.625,0.3,habitat_coastal,FB,
+355,Parapercis colias,Pinguipedidae,New Zealand blue cod,0.447,0.1,habitat_coastal,REF,Ref: (22)
+356,Petrus rupestris,Sparidae,Red steenbras,0.257,0.9,migratory,REF,Secondary ref: (23)
+357,Pogonias cromis,Sciaenidae,Black drum,0.187,0.3,habitat_coastal,FB,
+358,Prionace glauca,Carcharhinidae,Blue shark,0.055,0.9,hms,FB,
+359,Psenopsis anomala,Centrolophidae,Pacific rudderfish,0.702,0.3,habitat_coastal,FAO,"FAO: “Epipelagic layer to 370m. Adults inhabit bottom, but migrate upward at night.”"
+360,Psettodes erumei,Psettodidae,Indian halibut,0.855,0.3,habitat_benthic,FB,
+361,Pseudotolithus senegalensis,Sciaenidae,Cassava croaker,0.477,0.3,habitat_coastal,FB,
+362,Pterogymnus laniarius,Sparidae,Panga seabream,0.384,0.3,habitat_reef,FB,
+363,Pteroscion peli,Sciaenidae,Boe drum,0.625,0.3,habitat_benthic,FB,
+364,Pterygotrigla polyommata,Triglidae,Latchet,0.388,0.3,habitat_benthic,FB,
+365,Rhabdosargus globiceps,Sparidae,White stumpnose,0.441,0.3,habitat_reef,FB,
+366,Scophthalmus rhombus,Scophthalmidae,Brill,0.837,0.3,habitat_benthic,FB,
+367,Scyliorhinus stellaris,Scyliorhinidae,Nursehound,0.165,0.3,habitat_benthic,FB,"FB: “found over rough, even rocky or coralline ground, and algal-covered bottoms. Feed on bottom-living invertebrates...”"
+368,Sphyrna lewini,Sphyrnidae,Scalloped hammerhead,0.06,0.9,migratory,FB,FB: “Huge schools of small migrating individuals move pole ward in the summer in certain areas (Ref. 244).”
+369,Sphyrna zygaena,Sphyrnidae,Smooth hammerhead,0.115,0.9,migratory,FB,FB: “Migrates northward in summer; young often in large aggregations of hundreds of individuals (Ref. 13562).”
+370,Squatina argentina,Squatinidae,Argentine angelshark,0.101,0.3,habitat_benthic,FB,
+371,Stephanolepis cirrhifer,Monacanthidae,Threadsail filefish,0.843,0.3,habitat_coastal,IUCN,
+372,Tautoga onitis,Labridae,Tautog,0.359,0.3,habitat_coastal,REF,Secondary ref: (24)
+373,Thyrsites atun,Gempylidae,Snoek,0.349,0.3,habitat_coastal,REF,Secondary ref: (25)
+374,Zoarces viviparus,Zoarcidae,Eelpout,0.331,0.1,sedentary,REF,Secondary ref: (26)
+375,Alepes djedaba,Carangidae,Shrimp scad,1.017,0.3,habitat_reef,FB,
+376,Alosa pseudoharengus,Clupeidae,Alewife,1.843,0.3,habitat_coastal,FB,FB: “Movement of schooling adults apparently restricted to coastal areas proximal to natal estuaries (Ref. 4639).”
+377,Alosa sapidissima,Clupeidae,American shad,1.013,0.9,pelagic,FB,"FB: “Spends most of its life at sea, returning to freshwater streams to breed (Ref. 27547).”"
+378,Amblygaster sirm,Clupeidae,Spotted sardinella,1.417,0.3,habitat_coastal,FB,
+379,Anchoa nasus,Engraulidae,Longnose anchovy,1.297,0.3,habitat_coastal,FB,
+380,Anodontostoma chacunda,Clupeidae,Chacunda gizzard shad,1.401,0.3,habitat_coastal,FB,
+381,Atule mate,Carangidae,Yellowtail scad,1.255,0.3,habitat_reef,FB,"FB: “Adults inhabit mangroves and coastal bays in pelagic waters (Ref. 58302). They form schools to about 50 m in inshore waters (Ref. 9894), or singly (Ref. 48635).”"
+382,Brevoortia aurea,Clupeidae,Brazilian menhaden,0.939,0.3,habitat_coastal,REF,Secondary ref: (27)
+383,Carangoides bajad,Carangidae,Orangespotted trevally,0.976,0.3,habitat_reef,FB,FB: “Adults are common along coastal reef slopes or around large coral heads in lagoons (Ref. 48635).”
+384,Caranx crysos,Carangidae,Blue runner,0.711,0.3,habitat_coastal,FB,
+385,Carangoides fulvoguttatus,Carangidae,Yellowspotted trevally,1.01,0.3,habitat_reef,FB,
+386,Caranx ignobilis,Carangidae,Giant trevally,0.422,0.3,habitat_reef,FB,
+387,Caranx ruber,Carangidae,Bar jack,0.824,0.3,habitat_reef,FB,
+388,Chirocentrus nudus,Chirocentridae,Whitefin wolf-herring,0.27,0.3,habitat_coastal,FB,"FB: “An inshore pelagic species that feeds mainly on small fishes, but also crabs (Ref. 5213).”"
+389,Clupanodon thrissa,Clupeidae,Chinese gizzard shad,1.165,0.3,habitat_coastal,FB,
+390,Clupeonella cultriventris,Clupeidae,Black and Caspian Sea sprat,0.908,0.9,migratory,FB,FB: “Migratory between winter or autumn feeding and summer spawning grounds.”
+391,Cynoscion acoupa,Sciaenidae,Acoupa weakfish,0.392,0.3,habitat_coastal,FB,
+392,Cynoscion jamaicensis,Sciaenidae,Jamaica weakfish,0.661,0.3,habitat_coastal,FB,
+393,Cynoscion leiarchus,Sciaenidae,Smooth weakfish,0.647,0.3,habitat_coastal,FB,
+394,Cynoscion virescens,Sciaenidae,Green weakfish,0.562,0.3,habitat_coastal,FB,
+395,Dactylopterus volitans,Dactylopteridae,Flying gurnard,0.639,0.3,habitat_coastal,IUCN,IUCN: “It is a pelagic spawner.”
+396,Decapterus maruadsi,Carangidae,Japanese scad,1.48,0.9,pelagic,FB,"FB: “In Guam, it is encountered in large numbers around fish aggregating devices, buoys anchored offshore to attract pelagic game fishes.”"
+397,Diplodus annularis,Sparidae,Annular seabream,0.781,0.3,habitat_coastal,FB,
+398,Diplodus sargus,Sparidae,White seabream,0.54,0.3,habitat_reef,FB,
+399,Diplodus vulgaris,Sparidae,Common two-banded seabream,0.583,0.3,habitat_reef,FB,
+400,Ethmidium maculatum,Clupeidae,Pacific menhaden,1.165,0.3,habitat_coastal,FB,
+401,Hemiramphus brasiliensis,Hemiramphidae,Ballyhoo halfbeak,0.747,0.3,habitat_coastal,REF,Secondary ref: (28)
+402,Hilsa kelee,Clupeidae,Kelee shad,1.08,0.3,habitat_coastal,FB,
+403,Ilisha elongata,Pristigasteridae,Elongate ilisha,0.974,0.3,habitat_coastal,FB,
+404,Isopisthus parvipinnis,Sciaenidae,Bigtooth corvina,0.625,0.3,habitat_coastal,FB,
+405,Konosirus punctatus,Clupeidae,Dotted gizzard shad,0.793,0.3,habitat_coastal,FB,
+406,Lachnolaimus maximus,Labridae,Hogfish,0.503,0.3,habitat_reef,FB,
+407,Lampris guttatus,Lampridae,Opah,0.605,0.9,pelagic,FB,
+408,Lepidocybium flavobrunneum,Gempylidae,Escolar,0.416,0.9,migrtory,REF,Secondary ref: (29)
+409,Lethrinus harak,Lethrinidae,Thumbprint emperor,0.396,0.3,habitat_reef,FB,
+410,Lethrinus lentjan,Lethrinidae,Pink ear emperor,0.428,0.3,habitat_reef,FB,
+411,Lethrinus nebulosus,Lethrinidae,Spangled emperor,0.335,0.3,habitat_reef,FB,
+412,Lethrinus obsoletus,Lethrinidae,Orange-striped emperor,0.457,0.3,habitat_reef,FB,
+413,Liza aurata,Mugilidae,Golden grey mullet,0.461,0.3,habitat_coastal,FB,
+414,Liza saliens,Mugilidae,Leaping mullet,0.498,0.3,habitat_coastal,FB,
+415,Lutjanus analis,Lutjanidae,Mutton snapper,0.375,0.3,habitat_reef,FB,
+416,Lutjanus argentimaculatus,Lutjanidae,Mangrove red snapper,0.346,0.3,habitat_reef,FB,
+417,Lutjanus argentiventris,Lutjanidae,Yellow snapper,0.313,0.3,habitat_reef,FB,
+418,Lutjanus bohar,Lutjanidae,Two-spot red snapper,0.403,0.3,habitat_reef,FB,
+419,Lutjanus buccanella,Lutjanidae,Blackfin snapper,0.522,0.3,habitat_coastal,FB,
+420,Lutjanus cyanopterus,Lutjanidae,Cubera snapper,0.381,0.3,habitat_reef,FB,
+421,Merluccius albidus,Merlucciidae,Offshore silver hake,0.365,0.9,pelagic,REF,Secondary ref: (30)
+422,Microstomus kitt,Pleuronectidae,Lemon sole,0.121,0.3,habitat_benthic,FB,
+423,Molva dypterygia,Lotidae,Blue ling,0.122,0.3,habitat_benthic,FB,or habitat_deep
+424,Monotaxis grandoculis,Lethrinidae,Humpnose big-eye bream,0.551,0.3,habitat_reef,FB,
+425,Mora moro,Moridae,Common mora,0.146,0.9,deep,FB,"FB: Ref. 9563, Ref. 4774"
+426,Naso unicornis,Acanthuridae,Bluespine unicornfish,0.337,0.3,habitat_reef,FB,
+427,Nematalosa nasus,Clupeidae,Bloch's gizzard shad,1.124,0.3,habitat_coastal,FB,
+428,Opisthonema libertate,Clupeidae,Pacific thread herring,0.701,0.3,habitat_coastal,FAO,
+429,Opisthonema oglinum,Clupeidae,Atlantic thread herring,1.027,0.3,habitat_coastal,FB,
+430,Osmerus eperlanus,Osmeridae,European smelt,0.095,0.3,habitat_coastal,FB,
+431,Pagrus pagrus,Sparidae,Red porgy,0.394,0.3,habitat_reef,FB,
+432,Parastromateus niger,Carangidae,Black pomfret,1.07,0.3,habitat_coastal,FB,
+433,Phycis phycis,Phycidae,Forkbeard,0.512,0.3,habitat_benthic,FB,
+434,Platichthys flesus,Pleuronectidae,European flounder,0.34,0.3,habitat_benthic,IUCN,"IUCN: “It migrates into the open sea to breed from March to June, during which time it can migrate up to 300 km offshore, although it will more often migrate just 30 km.”"
+435,Sardinella brasiliensis,Clupeidae,Brazilian sardinella,0.788,0.3,habitat_coastal,FB,
+436,Sardinella gibbosa,Clupeidae,Goldstripe sardinella,1.234,0.3,habitat_coastal,IUCN,"IUCN: “Sardinella gibbosa is a marine, reef-associated species that occurs in tropical waters between depths of 10 to 70 m (Pauly et al. 1996, FAO-FIGIS 2005).  This species forms schools in coastal waters; it is found in inshore waters of the continental shelf (Sousa and Dias 1981, Fischer et al. 1990).”"
+437,Sardinella maderensis,Clupeidae,Madeiran sardinella,0.811,0.9,migratory,IUCN,"IUCN: “Juveniles and adults show clear north-south migrations in the Gabon-Congo-Angola sector of their range and also in the Sierra Leone-Mauritania sector, each area having nurseries.”"
+438,Sardinella zunasi,Clupeidae,Japanese sardinella,0.938,0.3,habitat_coastal,IUCN,"IUCN: “Sardinella zunasi is a coastal, marine, pelagic species that is found near shore, including semi-enclosed sea areas over sandy and mud bottom habitats (Yamada et al. 1995).”"
+439,Saurida undosquamis,Synodontidae,Brushtooth lizardfish,0.594,0.3,habitat_benthic,FB,
+440,Sciaenops ocellatus,Sciaenidae,Red drum,0.347,0.3,habitat_benthic,FB,
+441,Scomberoides lysan,Carangidae,Doublespotted queenfish,0.861,0.3,habitat_reef,FB,
+442,Scomberoides tol,Carangidae,Needlescaled queenfish,0.911,0.3,habitat_reef,FB,
+443,Seriolina nigrofasciata,Carangidae,Blackbanded trevally,0.935,0.3,habitat_reef,FB,
+444,Serranus cabrilla,Serranidae,Comber,0.511,0.3,habitat_benthic,FB,
+445,Sphyraena barracuda,Sphyraenidae,Great barracuda,0.283,0.3,habitat_coastal,FB,
+446,Sphyraena sphyraena,Sphyraenidae,European barracuda,0.489,0.3,habitat_coastal,FB,
+447,Spondyliosoma cantharus,Sparidae,Black seabream,0.395,0.3,habitat_reef,FB,
+448,Sprattus fuegensis,Clupeidae,Falkland sprat,0.593,0.3,habitat_coastal,FB,
+449,Tenualosa ilisha,Clupeidae,Hilsa shad,1.644,0.9,migratory,FB,
+450,Tenualosa toli,Clupeidae,Toli shad,2.002,0.3,habitat_coastal,FB,
+451,Trachinotus blochii,Carangidae,Snubnose pompano,0.843,0.3,habitat_reef,FB,
+452,Trisopterus luscus,Gadidae,Pouting,0.881,0.3,habitat_coastal,FB,Secondary ref: (31)
+453,Umbrina cirrosa,Sciaenidae,Shi drum,0.434,0.3,habitat_reef,FB,
+454,Lethrinus mahsena,Lethrinidae,Sky emperor,0.322,0.3,habitat_reef,FB,
+455,Alopias superciliosus,Alopiidae,Bigeye thresher,0.077,0.9,hms,FB,
+456,Alopias vulpinus,Alopiidae,Thresher,0.047,0.9,hms,FB,
+457,Antimora rostrata,Moridae,Blue antimora,0.117,0.9,deep,FB,
+458,Argentina silus,Argentinidae,Greater argentine,0.073,0.9,pelagic,FB,
+459,Dasyatis pastinaca,Dasyatidae,Common stingray,0.527,0.3,habitat_benthic,FB,
+460,Ginglymostoma cirratum,Ginglymostomatidae,Nurse shark,0.072,0.3,habitat_reef,FB,
+461,Gymnura altavela,Gymnuridae,Spiny butterfly ray,0.329,0.3,habitat_benthic,IUCN,
+462,Pseudophycis bachus,Moridae,Red codling,0.201,0.3,habitat_benthic,FB,or habitat_deep
+463,Atractoscion nobilis,Sciaenidae,White weakfish,0.297,0.3,habitat_coastal,FB,
+464,Caulolatilus princeps,Malacanthidae,Ocean whitefish,0.361,0.3,habitat_reef,FB,
+465,Citharichthys sordidus,Paralichthyidae,Pacific sanddab,0.949,0.3,habitat_benthic,FB,
+466,Hyperoglyphe bythites,Centrolophidae,Black driftfish,0.292,0.3,habitat_coastal,IUCN,
+467,Malacanthus plumieri,Malacanthidae,Sand tilefish,0.402,0.3,habitat_benthic,FB,
+468,Paralichthys californicus,Paralichthyidae,California flounder,0.686,0.3,habitat_benthic,REF,Secondary ref: (32)
+469,Rachycentron canadum,Rachycentridae,Cobia,0.444,0.9,hms,IUCN,
+470,Semicossyphus pulcher,Labridae,California sheephead,0.707,0.3,habitat_reef,IUCN,"IUCN: “The fish tend to stay in the same reef and do not move around a lot, as shown by tag-recapture research (DeMartini et al. 1994).”"
+471,Taractichthys steindachneri,Bramidae,Sickle pomfret,0.47,0.9,hms,FB,"FB: “Highly migratory species, Annex I of the 1982 Convention on the Law of the Sea (Ref. 26139).”"
+472,Tautogolabrus adspersus,Labridae,Cunner,0.542,0.3,habitat_coastal,FB,
+473,Trachipterus arcticus,Trachipteridae,Dealfish,0.142,0.3,habitat_deep,FB,
+474,Myliobatis aquila,Myliobatidae,Common eagle ray,0.238,0.3,habitat_coastal,FB,
+475,Carangoides malabaricus,Carangidae,Malabar trevally,1.169,0.3,habitat_reef,FB,
+476,Epinephelus fuscoguttatus,Serranidae,Brown-marbled grouper,0.27,0.3,habitat_reef,FB,
+477,Epinephelus tauvina,Serranidae,Greasy grouper,0.187,0.3,habitat_reef,FB,
+478,Gnathanodon speciosus,Carangidae,Golden trevally,0.706,0.3,habitat_reef,FB,
+479,Diagramma pictum,Haemulidae,Painted sweetlips,0.515,0.3,habitat_reef,FB,
+480,Acanthopagrus bifasciatus,Sparidae,Twobar seabream,0.487,0.3,habitat_reef,FB,
+481,Sillago sihama,Sillaginidae,Silver sillago,0.713,0.3,habitat_coastal,FB,
+482,Megalops atlanticus,Megalopidae,Tarpon,0.15,0.9,migratory,IUCN,"IUCN: “Tarpon may have resident, migratory, or mixed populations (Robins et al. 1977). Tagging studies indicate that some mature tarpon may undertake substantial and alongshore migrations (Ault et al. 2005, Luo et al. 2008), while others are residents of particular locations (Guindon unpublished data, sensu Robichaud and Rose 2004). These movements may represent repeated migratory patterns, or there may be significant annual variation in the movement pattern of individuals (Ault et al. 2008). Seasonal migrations may also occur. Migrations cross state and federal boundaries, which may impact regulation.”"
+483,Nemipterus japonicus,Nemipteridae,Japanese threadfin bream,1.262,0.3,habitat_benthic,FB,
+484,Miichthys miiuy,Sciaenidae,Mi-iuy croaker,0.562,0.3,habitat_coastal,FB,
+485,Xyrichtys novacula,Labridae,Pearly razorfish,0.651,0.3,habitat_coastal,FB,
+486,Lateolabrax japonicus,Lateolabracidae,Japanese seabass,0.28,0.3,habitat_reef,FB,
+487,Galeorhinus galeus,Triakidae,Tope shark,0.043,0.9,hms,FB,FB: “Occurs in small schools that are highly migratory in higher latitudes in their range (Ref. 244).”
+488,Pomadasys jubelini,Haemulidae,Sompat grunt,0.753,0.3,habitat_coastal,FB,
+489,Acanthurus sohal,Acanthuridae,Sohal surgeonfish,0.53,0.3,habitat_reef,FB,
+490,Otolithes ruber,Sciaenidae,Tigertooth croaker,0.865,0.3,habitat_coastal,FB,
+491,Plectropomus leopardus,Serranidae,Leopard coralgrouper,0.262,0.3,habitat_reef,FB,
+492,Spicara maena,Centracanthidae,Blotched picarel,0.661,0.3,habitat_coastal,FB,
+493,Epinephelus goreensis,Serranidae,Dungat grouper,0.287,0.3,habitat_benthic,IUCN,
+494,Mustelus mustelus,Triakidae,Smooth-hound,0.132,0.3,habitat_coastal,FB,
+495,Pontinus kuhlii,Scorpaenidae,Offshore rockfish,0.282,0.3,habitat_deep,FB,
+496,Promethichthys prometheus,Gempylidae,Roudi escolar,0.283,0.3,habitat_deep,FB,
+497,Epinephelus morrhua,Serranidae,Comet grouper,0.271,0.3,habitat_reef,FB,FB: “Marine; reef-associated; non-migratory”
+498,Variola louti,Serranidae,Yellow-edged lyretail,0.375,0.3,habitat_reef,FB,
+499,Alosa fallax,Clupeidae,Twaite shad,0.806,0.9,migratory,FB,"FB: “Amphihaline species (Ref. 51442), schooling and strongly migratory, but apparently not penetrating far up rivers (Ref. 188, 6683). Adults are usually found in open waters along the coast (Refs. 59043, 89486)”"
+500,Epinephelus areolatus,Serranidae,Areolate grouper,0.323,0.3,habitat_coastal,FB,"FB: “Usually found in seagrass beds or on fine sediment bottoms near rocky reefs, dead coral, or alcyonarians (Ref. 5222), in shallow continental shelf waters” "
+501,Rhynchobatus djiddensis,Rhinobatidae,Giant guitarfish,0.205,0.3,habitat_benthic,FB,
+502,Chelidonichthys capensis,Triglidae,Cape gurnard,0.277,0.3,habitat_benthic,FB,
+503,Epinephelus chlorostigma,Serranidae,Brownspotted grouper,0.315,0.3,habitat_coastal,FB,"FB: “Found over a wide range of habitats like seagrass beds and outer reef slopes (Ref. 5213), also on mud bottoms.”"
+504,Acanthopagrus berda,Sparidae,Goldsilk seabream,0.548,0.3,habitat_coastal,FB,
+505,Cymatoceps nasutus,Sparidae,Black musselcracker,0.189,0.3,habitat_coastal,FB,
+506,Bolbometopon muricatum,Scaridae,Green humphead parrotfish,0.237,0.3,habitat_reef,FB,
+507,Mulloidichthys flavolineatus,Mullidae,Yellowstripe goatfish,0.798,0.3,habitat_reef,FB,
+508,Gerres oyena,Gerreidae,Common silver-biddy,1.594,0.3,habitat_coastal,FB,
+509,Pomadasys kaakan,Haemulidae,Javelin grunter,0.627,0.3,habitat_coastal,FB,
+510,Acanthopagrus latus,Sparidae,Yellowfin seabream,0.419,0.3,habitat_coastal,FB,
+511,Chirocentrus dorab,Chirocentridae,Dorab wolf-herring,0.401,0.3,habitat_coastal,FB,"FB: “Occurs inshore, including brackish waters (Ref. 12743).”"
+512,Pagrus auratus,Sparidae,Silver seabream,0.213,0.3,habitat_reef,FB,
+513,Aethaloperca rogaa,Serranidae,Redmouth grouper,0.393,0.3,habitat_reef,FB,FB: “Marine; reef-associated; non-migratory”
+514,Cephalopholis boenak,Serranidae,Chocolate hind,0.477,0.3,habitat_reef,FB,
+515,Cephalopholis hemistiktos,Serranidae,Yellowfin hind,0.369,0.1,territorial,FB,"FB: “It is a monogamous species, the pair jointly defends a common territory of up to 62 square m (Ref. 6480).”"
+516,Cephalopholis miniata,Serranidae,Coral hind,0.453,0.1,territorial,FB,FB: “These groups occupy territories of up to 475 sq m subdivided into secondary territories and defended by a single female (Ref. 6480).”
+517,Cromileptes altivelis,Serranidae,Humpback grouper,0.152,0.3,habitat_reef,FB,
+518,Epinephelus marginatus,Serranidae,Dusky grouper,0.11,0.1,territorial,FB,FB: “Solitary and territorial (Ref. 12382).”
+519,Saurida tumbil,Synodontidae,Greater lizardfish,0.476,0.3,habitat_benthic,FB,
+520,Sargocentron spiniferum,Holocentridae,Sabre squirrelfish,1.094,0.3,habitat_reef,FB,
+521,Bathyraja eatonii,Arhynchobatidae,Eaton's skate,0.116,0.3,habitat_benthic,FB,
+522,Macrourus carinatus,Macrouridae,Ridge scaled rattail,0.131,0.3,habitat_deep,FB,
+523,Macrourus whitsoni,Macrouridae,Whitson's grenadier,0.131,0.3,habitat_deep,FB,
+524,Epinephelus multinotatus,Serranidae,White-blotched grouper,0.273,0.3,habitat_reef,FB,
+525,Epinephelus summana,Serranidae,Summan grouper,0.287,0.3,habitat_reef,FB,
+526,Micropogonias furnieri,Sciaenidae,Whitemouth croaker,0.541,0.3,habitat_coastal,FB,
+527,Plectorhinchus sordidus,Haemulidae,Sordid rubberlip,0.55,0.3,habitat_reef,FB,
+528,Plectorhinchus gaterinus,Haemulidae,Blackspotted rubberlip,0.447,0.3,habitat_reef,FB,
+529,Plectorhinchus schotaf,Haemulidae,Minstrel sweetlips,0.447,0.3,habitat_reef,FB,
+530,Pomadasys stridens,Haemulidae,Striped piggy,0.779,0.3,habitat_coastal,FB,
+531,Pomacanthus maculosus,Pomacanthidae,Yellowbar angelfish,0.205,0.3,habitat_reef,FB,
+532,Crenidens crenidens,Sparidae,Karanteen seabream,0.519,0.3,habitat_coastal,FB,
+533,Pelates quadrilineatus,Terapontidae,Fourlined terapon,0.814,0.3,habitat_coastal,FB,
+534,Rhabdosargus haffara,Sparidae,Haffara seabream,0.561,0.3,habitat_reef,FB,
+535,Odontesthes regia,Atherinidae,Chilean silverside,0.646,0.3,habitat_coastal,REF,Secondary ref: (33)
+536,Plectorhinchus pictus,Haemulidae,Trout sweetlips,0.289,0.3,habitat_reef,IUCN,IUCN: “This species inhabits coastal rocky and coral reefs (Carpenter et al. 1997).”
+537,Callorhinchus callorynchus,Callorhinchidae,Plownose chimaera,0.167,0.3,habitat_benthic,FB,
+538,Cephalopholis fulva,Serranidae,Coney,0.435,0.3,habitat_reef,FB,
+539,Patagonotothen ramsayi,Nototheniidae,Longtail southern cod,0.471,0.9,deep,,
+540,Tragulichthys jaculiferus,Diodontidae,Longspine burrfish,0.824,0.3,habitat_benthic,FB,
+541,Paristiopterus labiosus,Pentacerotidae,Giant boarfish,0.566,0.3,habitat_benthic,FB,
+542,Prolatilus jugularis,Pinguipedidae,Pacific sandperch,0.637,0.3,habitat_benthic,FB,
+543,Sparisoma cretense,Scaridae,Parrotfish,0.486,0.3,habitat_coastal,FB,
+544,Hydrolagus novaezealandiae,Chimaeridae,Dark ghost shark,0.192,0.9,deep,FB,
+545,Cynoponticus coniceps,Muraenesocidae,Red pike conger,0.409,0.1,sedentary,FB,
+546,Centroberyx affinis,Berycidae,Redfish,0.322,0.3,habitat_coastal,FB,
+547,Centriscops humerosus,Centriscidae,Banded yellowfish,0.866,0.3,habitat_benthic,FB,
+548,Lepidoperca pulchella,Serranidae,Orange perch,0.393,0.3,habitat_reef,FB,
+549,Caprodon longimanus,Serranidae,Pink maomao,0.393,0.3,habitat_reef,FB,
+550,Allothunnus fallai,Scombridae,Slender tuna,0.597,0.9,pelagic,FB,
+551,Ammodytes personatus,Ammodytidae,Pacific sandlance,0.344,0.3,habitat_coastal,FB,FB: “Marine; demersal; oceanodromous (Ref. 51243)”
+552,Aphanopus carbo,Trichiuridae,Black scabbardfish,0.346,0.9,deep,REF,Secondary ref: (34)
+553,Aphareus rutilans,Lutjanidae,Rusty jobfish,0.312,0.3,habitat_reef,FB,
+554,Aprion virescens,Lutjanidae,Green jobfish,0.588,0.3,habitat_reef,FB,
+555,Apsilus fuscus,Lutjanidae,African forktail snapper,0.591,0.3,habitat_reef,FB,
+556,Argentina sphyraena,Argentinidae,Argentine,0.228,0.9,pelagic,FB,"FB: “Feeds on bottom-living polychaetes, mollusks and crustaceans, also on pelagic invertebrates and fishes.”"
+557,Atheresthes evermanni,Pleuronectidae,Kamchatka flounder,0.172,0.3,habitat_benthic,FB,
+558,Caulolatilus microps,Malacanthidae,Grey tilefish,0.346,0.1,sedentary,IUCN,IUCN: “It is generally not migratory and most likely inhabits burrows as do most of its congeners.”
+559,Champsocephalus gunnari,Channichthyidae,Mackerel icefish,0.303,0.3,habitat_coastal,REF,Secondary ref: (35)
+560,Channichthys rhinoceratus,Channichthyidae,Unicorn icefish,0.239,0.3,habitat_coastal,FB,
+561,Coryphaenoides rupestris,Macrouridae,Roundnose grenadier,0.072,0.3,habitat_deep,FB,
+562,Cyclopterus lumpus,Cyclopteridae,Lumpfish,0.144,0.9,migratory,FB,FB: “They migrate considerable distances in an annual cycle between deeper waters in winter and shallower waters in summer (Ref. 26141).”
+563,Dentex angolensis,Sparidae,Angolan dentex,0.459,0.3,habitat_coastal,FB,
+564,Drepane africana,Drepaneidae,African sicklefish,0.478,0.3,habitat_coastal,FB,
+565,Elops saurus,Elopidae,Ladyfish,0.574,0.3,habitat_coastal,FB,FB: “Spawn in the open sea (Ref. 5217).”
+566,Encrasicholina punctifer,Engraulidae,Buccaneer anchovy,1.63,0.9,pelagic,FB,"FB: “A schooling species found inshore and in oceanic waters, hundreds of miles from land.”"
+567,Euthynnus lineatus,Scombridae,Black skipjack,0.516,0.9,pelagic,IUCN,
+568,Gadus ogac,Gadidae,Greenland cod,0.385,0.3,habitat_coastal,FAO,"FAO: “Usually lives close to the coast, from 0 to 200 m depth, and is rarely found offshore, in deeper water.”"
+569,Galeus melastomus,Pentanchidae,Blackmouth catshark,0.188,0.3,habitat_deep,FB,
+570,Gasterochisma melampus,Scombridae,Butterfly kingfish,0.597,0.9,deep,FB,
+571,Joturus pichardi,Mugilidae,Bobo mullet,0.636,0.3,habitat_coastal,FB,
+572,Labrus bergylta,Labridae,Ballan wrasse,0.208,0.3,habitat_reef,FB,
+573,Leiostomus xanthurus,Sciaenidae,Spot croaker,0.766,0.3,habitat_coastal,FB,
+574,Lophius piscatorius,Lophiidae,Angler,0.394,0.3,habitat_benthic,FB,
+575,Macrourus berglax,Macrouridae,Roughhead grenadier,0.088,0.3,habitat_deep,FB,
+576,Merluccius senegalensis,Merlucciidae,Senegalese hake,0.196,0.9,migratory,FB,FB: “Undergoes seasonal latitudinal migrations (Ref. 9709).”
+577,Pleurogrammus azonus,Hexagrammidae,Okhotsk atka mackerel,0.16,0.3,habitat_benthic,FB,
+578,Priacanthus macracanthus,Priacanthidae,Red bigeye,0.901,0.3,habitat_reef,FB,
+579,Pseudupeneus prayensis,Mullidae,West African goatfish,0.897,0.3,habitat_benthic,FB,
+580,Salmo salar,Salmonidae,Atlantic salmon,0.73,0.9,migratory,FB,
+581,Scomberomorus brasiliensis,Scombridae,Serra Spanish mackerel,0.495,0.3,habitat_coastal,FB,"FB: “Does not migrate extensively, although some seasonal movement appears to occur off Trinidad.”"
+582,Scomberomorus sierra,Scombridae,Pacific sierra,0.626,0.9,pelagic,IUCN,
+583,Seriola lalandi,Carangidae,Yellowtail amberjack,0.434,0.3,habitat_reef,FB,
+584,Squatina californica,Squatinidae,Pacific angelshark,0.076,0.3,habitat_benthic,FB,
+585,Tetrapturus pfluegeri,Istiophoridae,Longbill spearfish,0.49,0.9,hms,FB,
+586,Umbrina canosai,Sciaenidae,Argentine croaker,0.681,0.3,habitat_benthic,FB,
+587,Acipenser transmontanus,Acipenseridae,White sturgeon,0.086,0.3,habitat_coastal,FB,"FB: “Spends most of its time in the sea, usually close to shore (Ref. 27547).”"
+588,Anarhichas denticulatus,Anarhichadidae,Northern wolffish,0.101,0.3,habitat_deep,FB,"FB: “Inhabits offshore waters in midwater; adults also near bottom from 60-970 m, mainly 100-900 m (Ref. 4694).”"
+589,Anarhichas lupus,Anarhichadidae,Atlantic wolffish,0.105,0.3,habitat_coastal,FB,
+590,Atherina boyeri,Atherinidae,Big-scale sand smelt,0.813,0.3,habitat_coastal,FB,
+591,Beryx decadactylus,Berycidae,Alfonsino,0.159,0.3,habitat_deep,FB,
+592,Caranx melampygus,Carangidae,Bluefin trevally,0.562,0.3,habitat_reef,FB,
+593,Caranx sexfasciatus,Carangidae,Bigeye trevally,0.731,0.3,habitat_reef,FB,
+594,Chimaera monstrosa,Chimaeridae,Rabbit fish,0.116,0.9,deep,FB,
+595,Chloroscombrus orqueta,Carangidae,Pacific bumper,0.884,0.3,habitat_coastal,FB,
+596,Cynoscion arenarius,Sciaenidae,Sand weakfish,0.79,0.3,habitat_coastal,FB,
+597,Dasyatis americana,Dasyatidae,Southern stingray,0.54,0.3,habitat_benthic,FB,
+598,Decapterus macrosoma,Carangidae,Shortfin scad,1.34,0.9,pelagic,FB,"FB: “A predominately pelagic schooling species (Ref. 9283, 48635, 58302).”"
+599,Dussumieria acuta,Dussumieriidae,Rainbow sardine,0.898,0.3,habitat_coastal,FB,
+600,Dussumieria elopsoides,Dussumieriidae,Slender rainbow sardine,0.787,0.3,habitat_coastal,FB,
+601,Engraulis mordax,Engraulidae,Californian anchovy,0.452,0.9,pelagic,FB,"FB: “Usually found in coastal waters within about 30 km from shore, but as far out as 480 km, forming large, tightly packed schools.”"
+602,Etrumeus whiteheadi,Dussumieriidae,Whitehead's round herring,0.424,0.3,habitat_coastal,FB,
+603,Gadiculus argenteus,Gadidae,Silvery pout,0.917,0.3,habitat_deep,FB,FB: “Marine; pelagic-oceanic; non-migratory; depth range 100 - 1000 m (Ref. 35388).”
+604,Gasterosteus aculeatus,Gasterosteidae,Three-spined stickleback,0.998,0.3,habitat_coastal,FB,
+605,Hemiramphus balao,Hemiramphidae,Balao halfbeak,0.889,0.9,pelagic,IUCN,"IUCN: “This offshore, surface dwelling species forms large schools and can be associated with pelagic Sargassum in the North Atlantic Ocean and Gulf of Mexico (Coston-Clements et al. 1991, Collette 1999).”"
+606,Lethrinus atlanticus,Lethrinidae,Atlantic emperor,0.43,0.3,habitat_reef,FB,
+607,Lethrinus borbonicus,Lethrinidae,Snubnose emperor,0.636,0.3,habitat_reef,FB,
+608,Lethrinus microdon,Lethrinidae,Smalltooth emperor,0.405,0.3,habitat_reef,FB,
+609,Lethrinus xanthochilus,Lethrinidae,Yellowlip emperor,0.313,0.3,habitat_reef,FB,
+610,Lophius gastrophysus,Lophiidae,Blackfin goosefish,0.425,0.3,habitat_benthic,FB,
+611,Muraena helena,Muraenidae,Mediterranean moray,0.189,0.1,territorial,FB,
+612,Mycteroperca phenax,Serranidae,Scamp,0.216,0.3,habitat_reef,FB,
+613,Pellona ditchela,Pristigasteridae,Indian pellona,0.764,0.9,pelagic,IUCN,
+614,Petromyzon marinus,Petromyzontidae,Sea lamprey,0.292,0.9,migratory,FB,"FB: “Amphihaline species making important migrations. Spends its adult life in the sea for about 20-36 months, moving further offshore as it grows (Ref. 59043).” "
+615,Ruvettus pretiosus,Gempylidae,Oilfish,0.416,0.9,migratory,FB,FB: “Migrates far offshore (Ref. 26139). Pelagic (Ref. 5951).”
+616,Sardinella lemuru,Clupeidae,Bali sardinella,1.197,0.3,habitat_coastal,FB,
+617,Sardinella longiceps,Clupeidae,Indian oil sardine,1.069,0.9,migratory,FB,FB: “Coastal pelagic (Ref. 68964). Forms schools in coastal waters and strongly migratory.”
+618,Scomberoides commersonnianus,Carangidae,Talang queenfish,0.911,0.3,habitat_reef,FB,
+619,Selene peruviana,Carangidae,Peruvian moonfish,0.882,0.3,habitat_coastal,FB,
+620,Stereolepis gigas,Polyprionidae,Giant seabass,0.278,0.3,habitat_benthic,IUCN,
+621,Stromateus fiatola,Stromateidae,Blue butterfish,0.839,0.9,pelagic,FB,
+622,Tetrapturus angustirostris,Istiophoridae,Shortbill spearfish,0.49,0.9,hms,FB,
+623,Tetrapturus belone,Istiophoridae,Mediterranean spearfish,0.49,0.9,hms,FB,
+624,Trachinotus mookalee,Carangidae,Indian pompano,0.843,0.3,habitat_coastal,FB,
+625,Trachinus draco,Trachinidae,Greater weever,0.63,0.3,habitat_benthic,FB,"FB: “At night they swim around freely, even pelagically (Ref. 35388).”"
+626,Trichiurus lepturus,Trichiuridae,Largehead hairtail,0.583,0.3,habitat_coastal,FB,
+627,Uranoscopus scaber,Uranoscopidae,Stargazer,0.645,0.1,sedentary,FB,
+628,Zeus faber,Zeidae,John dory,0.214,0.3,habitat_reef,FB,
+629,Psettichthys melanostictus,Pleuronectidae,Pacific sand sole,0.306,0.3,habitat_benthic,FB,
+630,Normanichthys crockeri,Normanichthyidae,Mote sculpin,0.459,0.3,habitat_coastal,REF,Secondary ref: (36)
+631,Sphyraena obtusata,Sphyraenidae,Obtuse barracuda,0.681,0.3,habitat_coastal,FB,
+632,Umbrina canariensis,Sciaenidae,Canary drum,0.379,0.3,habitat_benthic,FB,
+633,Dentex congoensis,Sparidae,Congo dentex,0.553,0.3,habitat_coastal,FB,
+634,Callorhinchus milii,Callorhinchidae,Ghost shark,0.114,0.3,habitat_benthic,FB,
+635,Sphyraena jello,Sphyraenidae,Pickhandle barracuda,0.598,0.3,habitat_coastal,FB,
+636,Epinephelus merra,Serranidae,Honeycomb grouper,0.431,0.3,habitat_reef,FB,
+637,Elops lacerta,Elopidae,West African ladyfish,0.594,0.3,habitat_coastal,FB,FB: “The reproduction takes place in the sea (Ref. 81265).”
+638,Scarus ghobban,Scaridae,Blue-barred parrotfish,0.573,0.3,habitat_reef,FB,
+639,Cheilinus undulatus,Labridae,Humphead wrasse,0.377,0.3,habitat_reef,FB,
+640,Gerres oblongus,Gerreidae,Slender silver-biddy,1.496,0.3,habitat_reef,FB,
+641,Mustelus lenticulatus,Triakidae,Spotted estuary smooth-hound,0.101,0.9,migratory,FB,"FB: “Makes seasonal inshore-offshore movements (Ref. 244).  Makes extensive coastal migrations, with one tagged female moving at least 1160 km (Ref. 54100).”"
+642,Mustelus schmitti,Triakidae,Narrownose smooth-hound,0.147,0.3,habitat_coastal,FB,
+643,Mustelus asterias,Triakidae,Starry smooth-hound,0.133,0.3,habitat_coastal,FB,
+644,Mustelus antarcticus,Triakidae,Gummy shark,0.09,0.9,migratory,FB,"FB: “These sharks are capable of long migrations, females traveling longer distances than males (Ref. 6390).  Utilized fresh for human consumption (Ref. 6871).”"
+645,Plectropomus areolatus,Serranidae,Squaretail coralgrouper,0.322,0.3,migratory,IUCN,"IUCN: “Individuals of both sexes appear to use reproductive migratory corridors to reach aggregation sites, which increase their vulnerability to fisheries (Rhodes and Tupper 2008).”"
+646,Cephalopholis argus,Serranidae,Peacock hind,0.453,0.3,habitat_reef,FB,
+647,Diastobranchus capensis,Synaphobranchidae,Basketwork eel,0.368,0.3,habitat_deep,REF,Secondary ref: (37)
+648,Epinephelus polylepis,Serranidae,Smallscaled grouper,0.281,0.3,habitat_benthic,IUCN,
+649,Plectropomus pessuliferus,Serranidae,Roving coralgrouper,0.322,0.3,habitat_reef,FB,
+650,Girella tricuspidata,Kyphosidae,Parore,0.178,0.3,habitat_coastal,FB,
+651,Fistularia corneta,Fistulariidae,Pacific cornetfish,0.859,0.3,habitat_reef,FB,"FB: “Adults occur at depths greater than 30 m, along continental and insular margins (Ref. 36710), over rocky substrates (Ref. 37955).”"
+652,Seriolella porosa,Centrolophidae,Choicy ruff,0.319,0.3,habitat_coastal,FB,
+653,Bregmaceros mcclellandi,Bregmacerotidae,Unicorn cod,0.39,0.9,pelagic,FB,
+654,Lepidorhynchus denticulatus,Macrouridae,Thorntooth grenadier,0.176,0.3,habitat_deep,FB,
+655,Solea senegalensis,Soleidae,Senegalese sole,0.141,0.3,habitat_benthic,FB,
+656,Chelidonichthys lucerna,Triglidae,Tub gurnard,0.346,0.3,habitat_benthic,FB,
+657,Gerres nigri,Gerreidae,Guinean striped mojarra,1.496,0.3,habitat_benthic,FB,
+658,Lophius vomerinus,Lophiidae,Devil anglerfish,0.446,0.3,habitat_benthic,FB,
+659,Cyttus traversi,Cyttidae,King dory,0.431,0.3,habitat_deep,FB,
+660,Aplodactylus punctatus,Aplodactylidae,NA,0.63,0.3,habitat_coastal,FB,"FB: “This species is most abundant littoral species on the coast of central Chile, found in close association with the brown kelp Lessonia trabeculata.”"
+661,Seriolella caerulea,Centrolophidae,White warehou,0.332,0.3,habitat_coastal,FB,
+662,Stromateus brasiliensis,Stromateidae,Southwest Atlantic butterfish,0.839,0.9,pelagic,FB,
+663,Scarus persicus,Scaridae,Gulf parrotfish,0.62,0.3,habitat_reef,IUCN,
+664,Cheilodactylus variegatus,Cheilodactylidae,Peruvian morwong,0.331,0.3,habitat_coastal,REF,Secondary ref: (38)
+665,Genypterus chilensis,Ophidiidae,Red cusk-eel,0.203,0.3,habitat_benthic,FB,
+666,Genypterus maculatus,Ophidiidae,Black cusk-eel,0.203,0.3,habitat_benthic,FB,
+667,Rhinobatos planiceps,Rhinobatidae,Pacific guitarfish,0.213,0.3,habitat_benthic,FB,
+668,Pennahia anea,Sciaenidae,Donkey croaker,1.314,0.3,habitat_coastal,FB,
+669,Rhynchobatus australiae,Rhinobatidae,Whitespotted wedgefish,0.205,0.3,habitat_benthic,FB,
+670,Himantura gerrardi,Dasyatidae,Sharpnose stingray,0.4,0.3,habitat_benthic,FB,
+671,Elagatis bipinnulata,Carangidae,Rainbow runner,0.893,0.9,pelagic,FB,
+672,Pseudotolithus senegallus,Sciaenidae,Law croaker,0.454,0.3,habitat_coastal,FB,
+673,Coregonus lavaretus,Salmonidae,European whitefish,0.391,0.3,habitat_coastal,IUCN,"IUCN: “Spawns on gravel, near shore, in shallow water, in December.”"
+674,Eptatretus cirrhatus,Myxinidae,Broadgilled hagfish,0.149,0.3,habitat_benthic,FB,
+675,Hoplopagrus guentherii,Lutjanidae,Mexican barred snapper,0.503,0.3,habitat_reef,FB,
+676,Scomberesox saurus,Scomberesocidae,Atlantic saury,0.634,0.9,pelagic,FB,
+677,Tylosurus crocodilus,Belonidae,Hound needlefish,0.696,0.3,habitat_coastal,FB,FB: “A pelagic species (Ref. 26340) found over lagoon and seaward reefs.”
+678,Plagiogeneion rubiginosum,Emmelichthyidae,Rubyfish,0.467,0.9,deep,IUCN,"IUCN: “Plagiogeneion rubiginosum inhabits deep waters along the edges of continental shelves and seamounts (Horn et al. 2012, O’Driscoll et al. 2012)...Based on radiocarbon analyses and otolith interpretations, it has a maximum longevity of about 100 years (Horn et al. 2012, Trnski 2015).”"
+679,Mullus argentinae,Mullidae,Argentine goatfish,0.777,0.3,habitat_benthic,FB,
+680,Sparus aurata,Sparidae,Gilthead seabream,0.38,0.3,habitat_reef,IUCN,IUCN: “This species has reduced home ranges and shows site fidelity when displaced (Abecassis and Erzini 2008) and may be solitary or form small aggregations.”
+681,Grammoplites suppositus,Platycephalidae,Spotfin flathead,0.421,0.3,habitat_benthic,FB,
+682,Peprilus paru,Stromateidae,American harvestfish,0.911,0.3,habitat_coastal,FB,"FB: “A pelagic fish forming large schools in coastal bays, inshore waters over the continental shelf and around islands at moderate depths (50 to 70 m) where it occurs throughout the year (Ref. 53006).”"
+683,Sparidentex hasta,Sparidae,Sobaity seabream,0.509,0.3,habitat_reef,FB,
+684,Dicologlossa cuneata,Soleidae,Wedge sole,0.219,0.3,habitat_benthic,FB,
+685,Palinurus delagoae,Palinuridae,Natal spiny lobster,0.22,0.3,habitat_benthic,REF,Secondary ref: (39) “...only 2.1% of larger lobsters migrated further than 20 km.”
+686,Palinurus mauritanicus,Palinuridae,pink spiny lobster,0.22,0.3,habitat_benthic,IUCN,
+687,Panulirus cygnus,Palinuridae,Australian spiny lobster,1.15,0.3,habitat_benthic,IUCN,
+688,Panulirus gracilis,Palinuridae,green spiny lobster,1.018,0.9,migratory,IUCN,"IUCN: “In the northern hemisphere, this species migrates to coastal shallow waters in November and December and remains there until May (Guzman et al. 2008).”"
+689,Panulirus homarus,Palinuridae,scalloped spiny lobster,1.018,0.3,habitat_benthic,REF,Secondary ref: (40) “Mark-recovery experiments conducted with the help of suture tags on Indian spiny lobster Panulirus homarus (Linn.) showed that their movement in the fishing ground is of a very restricted nature. Long migratory movements were not observed.”
+690,Panulirus longipes,Palinuridae,longlegged spiny lobster,1.018,0.3,habitat_benthic,SLB,
+691,Penaeus monodon,Penaeidae,giant tiger prawn,1.19,0.3,habitat_benthic,SLB,
+692,Xiphopenaeus kroyeri,Penaeidae,Atlantic seabob,0.88,0.3,habitat_benthic,SLB,
+693,Artemesia longinaris,Penaeidae,Argentine stiletto shrimp,0.52,0.3,habitat_benthic,SLB,
+694,Metapenaeus endeavouri,Penaeidae,endeavour shrimp,0.93,0.3,habitat_benthic,SLB,
+695,Metapenaeus joyneri,Penaeidae,Shiba shrimp,1.02,0.3,habitat_coastal,REF,Secondary ref: (41)
+696,Metapenaeus monoceros,Penaeidae,speckled shrimp,1.11,0.1,sedentary,SLB,SLB: “Frequently burrows (Ref. 106912).”
+697,Acetes erythraeus,Sergestidae,tsivakihini paste shrimp,1.19,0.3,habitat_coastal,SLB,
+698,Acetes japonicus,Sergestidae,akiami paste shrimp,1.19,0.3,habitat_coastal,SLB,
+699,Pleoticus muelleri,Solenoceridae,Argentine red shrimp,1.19,0.3,habitat_benthic,SLB,
+700,Haliporoides diomedeae,Solenoceridae,Chilean knife shrimp,0.96,0.3,habitat_benthic,SLB,
+701,Haliporoides triarthrus,Solenoceridae,knife shrimp,0.96,0.3,habitat_benthic,SLB,
+702,Sicyonia brevirostris,Sicyoniidae,brown rock shrimp,0.81,0.3,habitat_benthic,SLB,
+703,Sicyonia ingentis,Sicyoniidae,ridgeback rock shrimp,0.81,0.3,habitat_benthic,SLB,
+704,Aristeus varidens,Aristeidae,striped red shrimp,0.48,0.3,habitat_deep,SLB,
+705,Nematopalaemon schmitti,Palaemonidae,whitebelly prawn,1.19,0.3,habitat_coastal,SLB,
+706,Pandalus jordani,Pandalidae,ocean shrimp,0.54,0.3,habitat_benthic,SLB,
+707,Pandalus hypsinotus,Pandalidae,coonstriped shrimp,0.56,0.3,habitat_benthic,SLB,
+708,Homarus gammarus,Nephropidae,European lobster,0.37,0.1,territorial,SLB,SLB: “Nocturnal and territorial living in holes or crevices.” (42)
+709,Panulirus argus,Palinuridae,Caribbean spiny lobster,0.55,0.3,habitat_benthic,IUCN,
+710,Palinurus elephas,Palinuridae,Common spiny lobster,0.22,0.3,habitat_benthic,IUCN,
+711,Lithodes santolla,Lithodidae,Southern king crab,0.57,0.3,habitat_benthic,SLB,
+712,Nematopalaemon hastatus,Palaemonidae,estuarine prawn,1.19,0.3,habitat_coastal,SLB,
+713,Pandalus kessleri,Pandalidae,Hokkai shrimp,0.56,0.3,habitat_benthic,SLB,
+714,Panopea abrupta,Hiatellidae,Pacific geoduck clam,0.37,0.1,sedentary,SLB,
+715,Tivela mactroides,Veneridae,trigonal tivela,1.18,0.1,sedentary,SLB,
+716,Penaeus penicillatus,Penaeidae,NA,1.083,0.3,habitat_benthic,SLB,
+717,Cancer pagurus,Cancridae,ox crab,0.46,0.1,sedentary,SLB,
+718,Chaceon affinis,Geryonidae,deep-sea red crab,0.42,0.3,habitat_benthic,SLB,
+719,Callinectes danae,Portunidae,Dana swimming crab,0.6,0.3,habitat_coastal,REF,"Secondary ref: (43) “C. danae breeds in the estuarine bay complex, with males and juvenile females concentrated in the estuary.”"
+720,Portunus pelagicus,Portunidae,flower crab,1.19,0.3,habitat_coastal,SLB,"“In all, 1003 tagged crabs (14.7%) were recaptured, with 79% of these recaptured less than 2 km from their release points and 4% recaptured more than 10 km from their release points.” Ref: (44)"
+721,Cancer borealis,Cancridae,Jonah crab,0.46,0.1,sedentary,SLB,
+722,Portunus trituberculatus,Portunidae,horse crab,1.19,0.9,migratory,REF,"Secondary ref: (45) “P. trituberculatus is characterized by long-distance migration and is a repeat spawner (Dai, 1977, 1986; Xue et al., 1997).”"
+723,Scylla serrata,Portunidae,giant mud crab,1.17,0.3,habitat_coastal,REF,Secondary ref: (46)
+724,Chaceon maritae,Geryonidae,West African geryon,0.42,0.3,habitat_benthic,SLB,
+725,Chaceon fenneri,Geryonidae,Gulf of Mexico golden crab,0.42,0.3,habitat_benthic,SLB,
+726,Cancer productus,Cancridae,red rock crab,0.46,0.1,sedentary,SLB,SLB: “Buries itself in the substrate during periods of inactivity (Ref. 78491).”
+727,Chionoecetes japonicus,Oregoniidae,red snow crab,0.58,0.3,habitat_benthic,SLB,
+728,Loxechinus albus,Parechinidae,Chilean sea urchin,0.57,0.1,sedentary,SLB,
+729,Cerastoderma edule,Cardiidae,common edible cockle,0.49,0.1,sedentary,SLB,
+730,Loligo vulgaris,Loliginidae,European squid,0.34,0.9,migratory,IUCN,IUCN: “Horizontal migrations also take place due to environmental factors; animals migrate into deeper waters during the winter. Offshore and onshore migrations also take place in relation to reproduction.”
+731,Spisula solida,Mactridae,solid surf clam,0.47,0.1,sedentary,SLB,
+732,Mytilus edulis,Mytilidae,blue mussel,0.54,0.1,sedentary,SLB,
+733,Mytilus galloprovincialis,Mytilidae,Mediterranean mussel,0.5,0.1,sedentary,SLB,
+734,Eledone cirrhosa,Eledonidae,horned octopus,0.54,0.3,habitat_benthic,SLB,
+735,Illex coindetii,Ommastrephidae,shortfin squid,0.52,0.9,migratory,SLB,SLB: “Performs diel vertical movements (Ref. 275) as well as seasonal migrations (Ref. 64257).”
+736,Todarodes sagittatus,Ommastrephidae,European flying squid,0.38,0.9,migratory,SLB,SLB: “Migrates to offshore waters during winter; spawning is thought to occur in the continental slope (Ref. 2614).”
+737,Crassostrea gigas,Ostreidae,giant cupped oyster,0.57,0.1,sedentary,SLB,
+738,Crassostrea virginica,Ostreidae,American cupped oyster,0.57,0.1,sedentary,SLB,
+739,Aequipecten opercularis,Pectinidae,queen scallop,0.56,0.1,sedentary,SLB,ref: (47)
+740,Pecten maximus,Pectinidae,great Atlantic scallop,0.57,0.1,sedentary,SLB,ref: (47)
+741,Sepia officinalis,Sepiidae,common cuttlefish,0.56,0.3,habitat_benthic,SLB,
+742,Chamelea gallina,Veneridae,Striped venus clam,0.5,0.1,sedentary,SLB,
+743,Mercenaria mercenaria,Veneridae,northern quahog,0.43,0.1,sedentary,SLB,
+744,Argopecten irradians,Pectinidae,Atlantic bay scallop,1.01,0.1,sedentary,SLB,
+745,Octopus maya,Octopodidae,Mexican four-eyed octopus,0.65,0.3,habitat_coastal,SLB,
+746,Illex argentinus,Ommastrephidae,Argentine shortfin squid,1,0.9,pelagic,REF,Secondary ref: (48)
+747,Todarodes pacificus,Ommastrephidae,Japanese flying squid,1.12,0.9,pelagic,SLB,
+748,Dosidicus gigas,Ommastrephidae,jumbo flying squid,1.19,0.9,pelagic,REF,Secondary ref: (49) “Horizontal movements of nearly 100 km over 3 d were observed”
+749,Ruditapes philippinarum,Veneridae,Japanese carpet shell,1.19,0.1,sedentary,SLB,
+750,Pecten novaezelandiae,Pectinidae,scallop,0.51,0.1,sedentary,SLB,
+751,Argopecten ventricosus,Pectinidae,Pacific calico scallop,1.01,0.1,sedentary,SLB,"SLB: “Moves by expelling water between valves propelling to a distance of 1m upwards or several meters sideways, i.e., flying motion”"
+752,Pecten jacobaeus,Pectinidae,great Mediterranean scallop,0.43,0.1,sedentary,SLB,
+753,Turbo cornutus,Turbinidae,horned turban,1.19,0.1,sedentary,SLB,
+754,Ruditapes decussatus,Veneridae,grooved carpet shell,1.19,0.1,sedentary,SLB,
+755,Haliotis rubra,Haliotidae,blacklip abalone,0.57,0.1,sedentary,SLB,
+756,Mytilus coruscus,Mytilidae,Far eastern mussel,0.49,0.1,sedentary,SLB,
+757,Trachysalambria curvirostris,Penaeidae,southern rough shrimp,1.19,0.3,habitat_benthic,SLB,
+758,Litopenaeus setiferus,Penaeidae,northern white shrimp,0.56,0.3,habitat_benthic,SLB,
+759,Doryteuthis opalescens,Loliginidae,opalescent inshore squid,0.93,0.9,pelagic,SLB,
+760,Doryteuthis gahi,Loliginidae,Patagonian squid,0.48,0.9,migratory,SLB,
+761,Larimichthys crocea,Sciaenidae,Large yellow croaker,0.601,0.3,habitat_coastal,FB,
+762,Liza haematocheila,Mugilidae,So-iuy mullet,0.293,0.3,habitat_coastal,FB,
+763,Tegillarca granosa,Arcidae,granular ark,0.85,0.1,sedentary,SLB,
+764,Fenneropenaeus chinensis,Penaeidae,fleshy prawn,0.88,0.9,migratory,REF,Secondary ref: (50)
+765,Fenneropenaeus merguiensis,Penaeidae,banana prawn,1.18,0.3,habitat_benthic,FB,
+766,Sebastes norvegicus,Sebastidae,Golden redfish,0.057,0.3,habitat_benthic,FB,
+767,Metacarcinus magister,Cancridae,Dungeness crab,0.57,0.3,habitat_coastal,SLB,
+768,Doryteuthis pealeii,Loliginidae,longfin inshore squid,0.705,0.9,migratory,IUCN,
+769,Pleuronectes quadrituberculatus,Pleuronectidae,Alaska plaice,0.12,0.3,habitat_benthic,REF,Secondary ref: (51)
+770,Pseudopleuronectes herzensteini,Pleuronectidae,Yellow striped flounder,0.483,0.3,habitat_benthic,FAO,
+771,Farfantepenaeus notialis,Penaeidae,southern pink shrimp,0.46,0.3,habitat_benthic,SLB,
+772,Farfantepenaeus aztecus,Penaeidae,northern brown shrimp,0.52,0.3,habitat_benthic,SLB,
+773,Scophthalmus maximus,Scophthalmidae,Turbot,0.445,0.3,habitat_benthic,FB,
+774,Kajikia audax,Istiophoridae,Striped marlin,0.347,0.9,pelagic,FB,
+775,Nemadactylus bergi,Cheilodactylidae,Castaneta,0.189,0.3,habitat_benthic,REF,Secondary ref: (52)
+776,Leucoraja naevus,Rajidae,Cuckoo ray,0.067,0.3,habitat_benthic,IUCN,
+777,Farfantepenaeus duorarum,Penaeidae,pink shrimp,0.51,0.9,pelagic,REF,Secondary ref: (53)
+778,Istiompax indica,Istiophoridae,Black marlin,0.362,0.9,hms,FB,
+779,Melicertus kerathurus,Penaeidae,caramote prawn,0.57,0.3,habitat_benthic,SLB,
+780,Farfantepenaeus californiensis,Penaeidae,yellowleg shrimp,0.92,0.3,habitat_benthic,SLB,
+781,Farfantepenaeus brevirostris,Penaeidae,crystal shrimp,0.55,0.3,habitat_benthic,SLB,
+782,Lithodes aequispinus,Lithodidae,golden king crab,0.57,0.3,habitat_benthic,SLB,
+783,Eleginus nawaga,Gadidae,Navaga,0.38,0.3,habitat_coastal,FB,
+784,Melicertus latisulcatus,Penaeidae,western king prawn,1.12,0.3,habitat_benthic,SLB,
+785,Parophrys vetulus,Pleuronectidae,English sole,0.314,0.9,migratory,FB,
+786,Amblyraja radiata,Rajidae,Starry ray,0.108,0.9,migratory,FB,
+787,Chelidonichthys cuculus,Triglidae,Red gurnard,0.231,0.3,habitat_benthic,FB,
+788,Moolgarda seheli,Mugilidae,Bluespot mullet,0.655,0.3,habitat_coastal,FB,
+789,Kajikia albida,Istiophoridae,Atlantic white marlin,0.387,0.9,hms,FB,
+790,Litopenaeus occidentalis,Penaeidae,western white shrimp,0.89,0.3,habitat_benthic,SLB,
+791,Zenopsis nebulosa,Zeidae,Mirror dory,0.199,0.9,deep,FB,
+792,Netuma thalassinus,Ariidae,Giant catfish,0.31,0.3,habitat_coastal,FB,
+793,Litopenaeus vannamei,Penaeidae,whiteleg shrimp,0.7,0.3,habitat_benthic,SLB,
+794,Meuschenia scaber,Monacanthidae,Velvet leatherjacket,1.032,0.3,habitat_coastal,FB,
+795,Dipturus batis,Rajidae,Blue skate,0.066,0.3,habitat_benthic,FB,
+796,Alosa immaculata,Clupeidae,Pontic shad,0.989,0.9,migratory,FB,
+797,Conger orbignianus,Congridae,Argentine conger,0.27,0.3,habitat_benthic,FB,
+798,Acanthopagrus schlegelii,Sparidae,Blackhead seabream,0.445,0.3,habitat_coastal,FB,
+799,Pegusa lascaris,Soleidae,Sand sole,0.191,0.3,habitat_benthic,IUCN,
+800,Leucoraja circularis,Rajidae,Sandy ray,0.108,0.3,habitat_benthic,FB,
+801,Balistes capriscus,Balistidae,Grey triggerfish,0.825,0.3,habitat_reef,FB,
+802,Hyporthodus flavolimbatus,Serranidae,Yellowedge grouper,0.175,0.3,habitat_benthic,FB,
+803,Dipturus oxyrinchus,Rajidae,Longnosed skate,0.162,0.3,habitat_benthic,FB,
+804,Leucoraja fullonica,Rajidae,Shagreen ray,0.108,0.3,habitat_benthic,FB,
+805,Hyporthodus niveatus,Serranidae,Snowy grouper,0.166,0.3,habitat_reef,FB,
+806,Pentaceros richardsoni,Pentacerotidae,Pelagic armourhead,0.393,0.3,habitat_benthic,FB,
+807,Trigloporus lastoviza,Triglidae,Streaked gurnard,0.195,0.3,habitat_benthic,FB,
+808,Herklotsichthys quadrimaculatus,Clupeidae,Bluestripe herring,1.74,0.3,habitat_coastal,FB,
+809,Lepidonotothen squamifrons,Nototheniidae,Grey rockcod,0.234,0.3,habitat_benthic,REF,Secondary ref: (54)
+810,Hyporthodus nigritus,Serranidae,Warsaw grouper,0.139,0.3,habitat_reef,FB,
+811,Hyporthodus mystacinus,Serranidae,Misty grouper,0.193,0.3,habitat_deep,FB,
