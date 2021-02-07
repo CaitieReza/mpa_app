@@ -18,9 +18,10 @@ ui <- fluidPage(
                              max = 2020, value = 10),
                  selectInput("select", label = h3("MPA's by Region"), 
                              choices = list("Choice 1" = 1, "Choice 2" = 2, "Choice 3" = 3), 
-                             selected = 1)
-                 
-                 
+                             selected = 1),
+                 selectInput("select", label = h3("Ecological Factors"), 
+                             choices = list("Mobility" = 1, "Choice 2" = 2, "Choice 3" = 3), 
+                             selected = 1),
     ),
     mainPanel("here's where our graph will go")
   )
