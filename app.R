@@ -12,6 +12,7 @@ library(shinythemes)
 ui <- fluidPage(theme = shinytheme("simplex"),
                 
                 navbarPage("OUR COOL TITLE",
+                           tabPanel("Summary/Information Tab"),
                            
                            tabPanel("Tab 1",
                                     sidebarLayout(
