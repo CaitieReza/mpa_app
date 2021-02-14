@@ -1,0 +1,99 @@
+---
+title: "Untitled"
+author: "Mariano Viz"
+date: "13/02/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+library(lubridate)
+
+#Time series
+library(feasts)
+library(tsibble)
+
+#ggplot customization:
+library(plotly)
+library(gghighlight)
+
+
+load("DBdata[asmt][v4.491].RData")
+```
+
+##Notes:
+
+- Need to change to tidy format (col: year, species, biomass) 
+
+
+
+
+
+```{r}
+#Atlantic Ocean Metadata:
+atlantic_tuna <- metadata %>% 
+  filter(region == "Atlantic Ocean")
+
+#Atlantic Ocean Area data:
+atlantic_tuna_area <- area %>% 
+  filter(areaname %in% c("Northern Atlantic", "South Atlantic", "Eastern Atlantic", "Western Atlantic", "Atlantic Ocean"))
+
+```
+
+
+```{r}
+#BIOMASS:
+  #No biomass data for ATBTUNAEATL (Atlantic bluefin tuna Eastern Atlantic)
+  #No biomass data for ATBTUNAWATL (Atlantic bluefin tuna Western Atlantic)
+
+atlantic_tuna_tb <- tb.data %>% 
+  select(ALBANATL, ALBASATL, BIGEYEATL, BMARLINATL, SAILEATL, SAILWATL, SKJEATL, SKJWATL, SWORDNATL, SWORDSATL, WMARLINATL, YFINATL) %>% 
+  rownames_to_column() %>% 
+  rename(year = rowname) %>% 
+  mutate(year = as.Date(as.character(year), "%Y")) %>% #convert to class date (better way?)
+  mutate(year = ymd(year)) %>% 
+  mutate(year = year(year))
+
+
+
+
+biomass_plot_data <- atlantic_tuna_tb %>% 
+  filter(year > 1929)
+
+
+biomass_plot <- ggplot(data = biomass_plot_data, aes(x = year)) +
+  geom_line(aes(y = ALBANATL))+
+  geom_line(aes(y = ALBASATL))+
+  geom_line(aes(y = BIGEYEATL))+
+  geom_line(aes(y = BMARLINATL))+
+  geom_line(aes(y = SAILEATL))+
+  geom_line(aes(y = SAILWATL))+
+  geom_line(aes(y = SKJEATL))+
+  geom_line(aes(y = SKJWATL))+
+  geom_line(aes(y = SWORDNATL))+
+  geom_line(aes(y = SWORDSATL))+
+  geom_line(aes(y = WMARLINATL))+
+  geom_line(aes(y = YFINATL))
+
+  
+  ggplotly(biomass_plot) 
+  
+
+  
+  
+
+                  
+```
+
+
+
+```{r}
+
+
+  
+
+```
+
