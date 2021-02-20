@@ -1,0 +1,221 @@
+---
+title: "Wrangled RAM"
+author: "Mariano Viz"
+date: "20/02/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+
+library(tidyverse)
+library(here)
+library(lubridate)
+
+#Time series
+library(feasts)
+library(tsibble)
+
+#ggplot customization:
+library(plotly)
+library(gghighlight)
+
+load(here("DBdata[asmt][v4.491].RData"))
+
+
+```
+
+# Tidy data frames (Atlantic Ocean Stocks, 1930-2018):
+
+- tuna_biomass --- Total biomass data
+- tuna_catch --- Total catch data
+- tuna_er --- Exploitation rate data (usually an annual fraction harvested)
+- tuna_f --- Fishing mortality data (usually an instantaneous rate)
+- tuna_b_bmsy --- B/Bmsy pref data (B/Bmsy if available, otherwise B/Bmgt)
+- tuna_u_umsy --- U/Umsy pref data (U/Umsy if available, otherwise U/Umgt)
+
+
+
+## Total Biomass 1930-2018 (Atlantic Ocean Stocks)
+
+```{r}
+#Tidy format: tb.data --- Total biomass data
+#No data: ATBTUNAEATL, ATBTUNAWATL
+
+tuna_biomass <- tb.data %>% 
+  select(ALBANATL, ALBASATL, BIGEYEATL, BMARLINATL, SAILEATL, SAILWATL, SKJEATL, SKJWATL, SWORDNATL, SWORDSATL, WMARLINATL, YFINATL)%>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname, names_to = "species", values_to = "biomass") %>% 
+  rename(year = rowname) %>% 
+  mutate(year = as.numeric(as.character(year))) %>% 
+  filter(year >= 1930) 
+
+```
+
+
+
+## Total Catch 1930-2018 (Atlantic Ocean Stocks)
+
+```{r}
+#Tidy format: tc.data --- Total catch data
+#Data for all 14 species
+tuna_catch <- tc.data %>% 
+  select(ALBANATL, ALBASATL, BIGEYEATL, BMARLINATL, SAILEATL, SAILWATL, SKJEATL, SKJWATL, SWORDNATL, SWORDSATL, WMARLINATL, YFINATL, ATBTUNAEATL, ATBTUNAWATL)%>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname, names_to = "species", values_to = "catch") %>% 
+  rename(year = rowname) %>%
+  mutate(year = as.numeric(as.character(year))) %>%
+  filter(year >= 1930) 
+
+
+```
+
+
+
+## Explotation Rate 1930-2018 (Atlantic Ocean Stocks)
+
+```{r}
+#Tidy format: er.data --- Exploitation rate data (usually an annual fraction harvested)
+#No data: ATBTUNAEATL, ATBTUNAWATL
+
+#NOTE: harvest rate (U); may be either exploitation rate or fishing mortality
+
+tuna_er <- er.data %>% 
+  select(ALBANATL, ALBASATL, BIGEYEATL, BMARLINATL, SAILEATL, SAILWATL, SKJEATL, SKJWATL, SWORDNATL, SWORDSATL, WMARLINATL, YFINATL) %>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname, names_to = "species", values_to = "explotation_rate") %>% 
+  rename(year = rowname) %>%
+  mutate(year = as.numeric(as.character(year))) %>%
+  filter(year >= 1930) 
+
+
+```
+
+
+
+
+## Fishing Mortality 1930-2018 (Atlantic Ocean Stocks)
+(Probably we'll use Explotation Rate instead of Fishing Mortality)
+
+```{r}
+#Tidy format: f.data --- Fishing mortality data (usually an instantaneous rate)
+#No data: SAILEATL, SAILWATL, WMARLINATL
+
+tuna_f <- f.data %>% 
+  select(ALBANATL, ALBASATL, BIGEYEATL, BMARLINATL, SKJEATL, SKJWATL, SWORDNATL, SWORDSATL, YFINATL, ATBTUNAEATL, ATBTUNAWATL) %>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname, names_to = "species", values_to = "explotation_rate") %>% 
+  rename(year = rowname) %>%
+  mutate(year = as.numeric(as.character(year))) %>%
+  filter(year >= 1930) 
+
+
+```
+
+
+
+## B/Bmsy 1930-2018 (Atlantic Ocean Stocks)
+
+```{r}
+#Tidy format: divbpref.data --- B/Bmsy pref data (B/Bmsy if available, otherwise B/Bmgt)
+#Data for all 14 species
+
+tuna_b_bmsy <- divbpref.data %>% 
+  select(ALBANATL, ALBASATL, BIGEYEATL, BMARLINATL, SAILEATL, SAILWATL, SKJEATL, SKJWATL, SWORDNATL, SWORDSATL, WMARLINATL, YFINATL, ATBTUNAEATL, ATBTUNAWATL) %>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname, names_to = "species", values_to = "b_bmsy") %>% 
+  rename(year = rowname) %>%
+  mutate(year = as.numeric(as.character(year))) %>%
+  filter(year >= 1930) 
+
+```
+
+
+## U/Umsy 1930-2018 (Atlantic Ocean Stocks)
+
+```{r}
+#Tidy format: divupref.data --- U/Umsy pref data (U/Umsy if available, otherwise U/Umgt)
+#Data for all 14 species
+
+tuna_u_umsy <- divupref.data %>% 
+  select(ALBANATL, ALBASATL, BIGEYEATL, BMARLINATL, SAILEATL, SAILWATL, SKJEATL, SKJWATL, SWORDNATL, SWORDSATL, WMARLINATL, YFINATL, ATBTUNAEATL, ATBTUNAWATL) %>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname, names_to = "species", values_to = "u_umsy") %>% 
+  rename(year = rowname) %>%
+  mutate(year = as.numeric(as.character(year))) %>%
+  filter(year >= 1930) 
+
+
+
+```
+
+
+
+
+## Some plots to explore values
+
+```{r}
+#Biomass plot:
+biomass_plot <- ggplot(data = tuna_biomass, aes(x = year, y = biomass)) +
+geom_line(aes(color = species))
+
+#Total Catch plot: 
+catch_plot <- ggplot(data = tuna_catch, aes(x = year, y = catch)) +
+geom_line(aes(color = species))
+
+#Explotation Rate plot:
+er_plot <- ggplot(data = tuna_er, aes(x = year, y = explotation_rate)) +
+geom_line(aes(color = species)) 
+
+#B/Bmsy plot: tuna_b_bmsy
+b_bmsy_plot <- ggplot(data = tuna_b_bmsy, aes(x = year, y = b_bmsy)) +
+geom_line(aes(color = species)) 
+
+
+#U/Umsy plot: 
+u_umsy_plot <- ggplot(data = tuna_u_umsy, aes(x = year, y = u_umsy)) +
+geom_line(aes(color = species)) 
+
+```
+
+
+
+
+```{r}
+#Interactive exploratory plots:
+
+ggplotly(biomass_plot)
+
+ggplotly(catch_plot)
+
+ggplotly(er_plot)
+
+ggplotly(b_bmsy_plot)
+
+ggplotly(u_umsy_plot)
+
+
+
+#can highlight species, values, or specific points with `gghighlight`
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
