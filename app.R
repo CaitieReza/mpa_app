@@ -10,6 +10,7 @@ library(shinythemes)
 
 # User Interface
 
+
 ui <- fluidPage(theme = shinytheme("sandstone"),
                 
                 navbarPage("StockWatch",
@@ -27,6 +28,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
+
                            tabPanel("Biomass",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
@@ -40,6 +42,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
+                           
                            tabPanel("Fishing Pressure",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
@@ -52,6 +55,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
+
                            tabPanel("Trends",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
