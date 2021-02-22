@@ -11,6 +11,7 @@ library(here)
 
 # User Interface
 
+
 ui <- fluidPage(theme = shinytheme("sandstone"),
                 
                 navbarPage(title=div(img(src="https://creazilla-store.fra1.digitaloceanspaces.com/silhouettes/67427/tuna-silhouette-4bb7ee-md.png", height = "05%", width = "05%"), "StockWatch"),
@@ -63,6 +64,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
+
                            tabPanel("Biomass",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
@@ -76,6 +78,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
+                           
                            tabPanel("Fishing Pressure",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
@@ -88,6 +91,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
+
                            tabPanel("Trends",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
