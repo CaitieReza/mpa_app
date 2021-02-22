@@ -9,12 +9,12 @@ library(shinythemes)
 
 
 # User Interface
-ui <- fluidPage(theme = shinytheme("simplex"),
+ui <- fluidPage(theme = shinytheme("sandstone"),
                 
-                navbarPage("OUR COOL TITLE",
-                           tabPanel("Summary/Information Tab"),
+                navbarPage("StockWatch",
+                           tabPanel("Home"),
                            
-                           tabPanel("Tab 1",
+                           tabPanel("Ecology",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
                                                    radioButtons(inputId = "penguin_species", 
@@ -26,7 +26,7 @@ ui <- fluidPage(theme = shinytheme("simplex"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
-                           tabPanel("Tab 2",
+                           tabPanel("Biomass",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
                                                    sliderInput("slider1", 
@@ -39,7 +39,7 @@ ui <- fluidPage(theme = shinytheme("simplex"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
-                           tabPanel("Tab 3",
+                           tabPanel("Fishing Pressure",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
                                                    selectInput("select", label = h3("MPA's by Region"), 
@@ -51,7 +51,7 @@ ui <- fluidPage(theme = shinytheme("simplex"),
                                       mainPanel("here's where our AWESOME graph will go")
                                     )
                            ),
-                           tabPanel("Tab 4",
+                           tabPanel("Exploring Trends",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
                                                    selectInput("select", label = h3("Ecological Factors"), 
