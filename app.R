@@ -75,7 +75,9 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                                
                                                    )
                                       ),
-                                      mainPanel("here's where our AWESOME graph will go")
+                                      mainPanel("here's where our AWESOME graph will go",
+                                                img(src = "https://cpb-us-e1.wpmucdn.com/sites.uw.edu/dist/f/2132/files/2019/01/Biomass_Coverage_all_stocks-Atlantic-Ocean-10t52kn.png")
+                                                )
                                     )
                            ),
                            
@@ -88,7 +90,9 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                    )
                                                    
                                       ),
-                                      mainPanel("here's where our AWESOME graph will go")
+                                      mainPanel("here's where our AWESOME graph will go",
+                                                img(src = "https://cpb-us-e1.wpmucdn.com/sites.uw.edu/dist/f/2132/files/2019/07/B-U_msy_2-kobe-plots-for-indiv-region_Atlantic-Ocean-tunas_RAM4-46-asmt_2019_07_16-1.jpg")
+                                                )
                                     )
                            ),
 
@@ -99,7 +103,8 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                                choices = list("Mobility" = 1, "Choice 2" = 2, "Choice 3" = 3), 
                                                                selected = 1)
                                       ),
-                                      mainPanel("here's where our AWESOME graph will go")
+                                      mainPanel("here's where our AWESOME graph will go",
+                                                img(src = "https://cpb-us-e1.wpmucdn.com/sites.uw.edu/dist/f/2132/files/2019/07/B-U-C_msy_trends-for-indiv-region_Atlantic-Ocean-tunas_RAM4-46-asmt_2019_07_16-1.jpg"))
                                     )
                            )
                            
