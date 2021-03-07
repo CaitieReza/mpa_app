@@ -461,12 +461,12 @@ server <- function(input, output) {
   
   
   output$value <- renderPrint({ 
-    case_when(input$select == "explotation_rate" ~ "write brief explanation of explotation rate",
-              input$select == "catch" ~ "write brief explanation of total catch",
-              input$select == "biomass" ~ "write brief explanation of total biomass",
-              input$select == "b_bmsy" ~ "write brief explanation of B/Bmsy",
-              input$select == "u_umsy" ~ "write brief explanation of U/Umsy",
-              input$select == "c_c_mean" ~ "write brief explanation of Catch/catch mean")
+    case_when(input$select == "explotation_rate" ~ "Exploitation rate is the proportion of biomass that is removed from a fish stock or population.",
+              input$select == "catch" ~ "Total catch is simply the total quantity of fish or fishery product removed from a single population or species.",
+              input$select == "biomass" ~ "Total Biomass is the total volume or “stock” of a population. Here, it is measured as a weight, in metric tons (MT). Though it is perhaps one of the most useful parameters in estimating the health of a specific fishery, it should be noted that total biomass does not indicate a population’s age distribution. (citation)",
+              input$select == "b_bmsy" ~ "B/Bmsy is the ratio of observed biomass (total population volume) to the  at Maximum Sustainable Yield (MSY).  MSY is the highest catch that can be removed from a continuously fished population, given average environmental conditions.",
+              input$select == "u_umsy" ~ "U/Umsy is the ratio of the fishing mortality rate (U) of a target species to that same species’ mortality rate, adjusted to achieve maximum sustainable yield (Umsy).",
+              input$select == "c_c_mean" ~ "Catch / catch mean is the ratio of annual catch to the average catch overall, and is another helpful parameter for assessing fishing pressure.")
     
   })
   
