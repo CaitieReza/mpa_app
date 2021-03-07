@@ -172,6 +172,96 @@ tuna_merged <- tuna_catch %>%
 
 #NOTES: add text describing each time series
 
+#TAB 5 Plots:
+##B/Bmsy plot:
+
+tuna_region_bmsy1 <- tuna_merged %>% 
+  group_by(year) 
+
+
+p1 <- ggplot(tuna_region_bmsy1)+ 
+  geom_boxplot(aes(x= factor(year), y = b_bmsy), 
+               fill = "blue", 
+               width = 0.2, 
+               outlier.color = NA,
+               outlier.shape = NA)+
+  stat_summary(aes(x= factor(year), y = b_bmsy, group = 1),
+               fun = mean, 
+               geom = "line",
+               alpha = 0.7,
+               size = 0.5,
+               color = "red")+
+  geom_hline(yintercept = 1, color = "orange2")+
+  scale_x_discrete("Year", breaks = c("1950","1960", "1970", "1980", "1990", "2000", "2010", "2018") )+
+  scale_y_continuous(breaks=c(0, 1, 2, 3, 4), limits = c(-0.1, 4.5))+
+  labs(y = "Relative biomass (B/Bmsy)")+
+  theme_minimal()
+
+
+p1 <- plotly_build(p1)
+
+p1$x$data <- lapply(p1$x$data, FUN = function(x){
+  x$marker = list(opacity = 0)
+  return(x)
+})
+
+
+
+#Umsy plot:
+
+tuna_region_2 <- tuna_merged %>% 
+  filter(year>=1970) %>% 
+  group_by(year) 
+
+
+p2 <- ggplot(tuna_region_2)+ 
+  geom_boxplot(aes(x= factor(year), y = u_umsy), fill = "blue", 
+               width = 0.2, 
+               outlier.color = NA)+
+  stat_summary(aes(x= factor(year), y = u_umsy, group = 1),
+               fun = mean, 
+               geom = "line",
+               alpha = 0.7,
+               size = 0.5,
+               color = "red")+
+  geom_hline(yintercept = 1, color = "orange2")+
+  scale_x_discrete("Year", breaks = c("1970", "1980", "1990", "2000", "2010", "2018") )+
+  scale_y_continuous(breaks=c(0, 1, 2, 3, 4), limits = c(-0.1, 4.5))+
+  labs(y = "Relative fishing pressure (U/Umsy)")+
+  theme_minimal()
+
+p2 <- plotly_build(p2)
+
+p2$x$data <- lapply(p2$x$data, FUN = function(x){
+  x$marker = list(opacity = 0)
+  return(x)
+})
+
+
+#Catch/catch mean plots:
+p3 <- ggplot()+ 
+  geom_boxplot(data = tuna_region_2, aes(x= factor(year), y = c_c_mean), fill = "blue", 
+               width = 0.2, 
+               outlier.color = NA)+
+  stat_summary(data = tuna_region_2, aes(x= factor(year), y = c_c_mean, group = 1),
+               fun = mean, 
+               geom = "line",
+               alpha = 0.7,
+               size = 0.5,
+               color = "red")+
+  geom_hline(yintercept = 1, color = "orange2")+
+  scale_x_discrete("Year", breaks = c("1970", "1980", "1990", "2000", "2010", "2018") )+
+  scale_y_continuous(breaks=c(0, 1, 2, 3, 4), limits = c(-0.1, 4.5))+
+  labs(y = "Catch/mean catch")+
+  theme_minimal()
+
+
+p3 <- plotly_build(p3)
+
+p3$x$data <- lapply(p3$x$data, FUN = function(x){
+  x$marker = list(opacity = 0)
+  return(x)
+})
 
 
 # User Interface
@@ -293,15 +383,51 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                     )
                            ),
 
-                           tabPanel("Trends",
+                           tabPanel("Trends",titlePanel("Atlantic Ocean stock trends"),
                                     sidebarLayout(
-                                      sidebarPanel("our widget/s!",
-                                                   selectInput("select", label = h3("Ecological Factors"), 
-                                                               choices = list("Mobility" = 1, "Choice 2" = 2, "Choice 3" = 3), 
-                                                               selected = 1)
+                                      sidebarPanel(radioButtons(inputId ="campare", 
+                                                                label = h3("Select"),
+                                                                choices = c("Atlantic Ocean Stock" = "Atlantic_stock", 
+                                                                            "Compare species" = "Compare_species"),
+                                                                selected = "Atlantic_stock"), 
+                                                   
+                                                   conditionalPanel(condition = "input.campare == 'Compare_species'",
+                                                                    radioButtons(inputId = "comp_sp",
+                                                                                 label = h5("Select species"),
+                                                                                 choices = c("Albacore tuna Northern Atlantic",
+                                                                                             "Albacore tuna South Atlantic",
+                                                                                             "Bigeye tuna Atlantic Ocean",
+                                                                                             "Blue marlin Atlantic Ocean",
+                                                                                             "Sailfish Eastern Atlantic",
+                                                                                             "Sailfish Western Atlantic",
+                                                                                             "Skipjack tuna Eastern Atlantic",
+                                                                                             "Skipjack tuna Western Atlantic",
+                                                                                             "Swordfish Northern Atlantic",
+                                                                                             "Swordfish South Atlantic",
+                                                                                             "White marlin Atlantic Ocean",
+                                                                                             "Yellowfin tuna Atlantic Ocean",
+                                                                                             "Atlantic bluefin tuna Eastern Atlantic",
+                                                                                             "Atlantic bluefin tuna Western Atlantic"),
+                                                                                 selected = "Albacore tuna Northern Atlantic"
+                                                                    )),
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   width = 3
+                                                   
+                                                   
+                                                   
                                       ),
-                                      mainPanel("here's where our AWESOME graph will go",
-                                                img(src = "https://cpb-us-e1.wpmucdn.com/sites.uw.edu/dist/f/2132/files/2019/07/B-U-C_msy_trends-for-indiv-region_Atlantic-Ocean-tunas_RAM4-46-asmt_2019_07_16-1.jpg"))
+                                      mainPanel("Atlantic Ocean Stocks",
+                                                plotlyOutput(outputId = "atl_oc_plot"),
+                                                hr(),
+                                                plotlyOutput(outputId = "atl_oc_plot2"),
+                                                plotlyOutput(outputId = "atl_oc_plot3")
+                                                
+                                      )
                                     )
                            )
                            
@@ -377,6 +503,168 @@ server <- function(input, output) {
       labs(color = "Relative B, U, and catch")+
       labs(y = "")+
       theme_minimal()
+    
+  })
+  
+#TAB 5:
+#Tab 5 output 1 (B/Bmsy):
+  
+  output$atl_oc_plot <- renderPlotly({
+    if (input$campare ==  "Atlantic_stock")  {p1} 
+    else {
+      
+      tuna_region_react <- reactive({ 
+        tuna_merged %>% 
+          filter(species == input$comp_sp) %>% 
+          group_by(year)
+      })
+      
+      
+      
+      p11 <- ggplot()+ 
+        geom_boxplot(data = tuna_region_bmsy1, aes(x= factor(year), y = b_bmsy), 
+                     fill = "grey",
+                     color = "grey",
+                     width = 0.2, 
+                     outlier.color = NA,
+                     outlier.shape = NA)+
+        stat_summary(data = tuna_region_bmsy1, aes(x= factor(year), y = b_bmsy, group = 1),
+                     fun = mean, 
+                     geom = "line",
+                     alpha = 0.7,
+                     size = 0.5,
+                     color = "grey")+
+        stat_summary(data = tuna_region_react(), aes(x= factor(year), y = b_bmsy, group = 1),
+                     fun = mean, 
+                     geom = "line",
+                     alpha = 0.7,
+                     size = 0.5,
+                     color = "red")+
+        geom_hline(yintercept = 1, color = "orange2")+
+        scale_x_discrete("Year", breaks = c("1950","1960", "1970", "1980", "1990", "2000", "2010", "2018") )+
+        scale_y_continuous(breaks=c(0, 1, 2, 3, 4), limits = c(-0.1, 4.5))+
+        labs(y = "Relative biomass (B/Bmsy)")+
+        theme_minimal()
+      p11 <- plotly_build(p11)
+      
+      p11$x$data <- lapply(p11$x$data, FUN = function(x){
+        x$marker = list(opacity = 0)
+        return(x)
+      })   
+      p11
+      
+      
+    } 
+    
+  })
+  
+  
+  
+#Tab 5 output 2 (U/Umsy):  
+  
+  output$atl_oc_plot2 <- renderPlotly({
+    if (input$campare ==  "Atlantic_stock")  {p2} 
+    else {
+      
+      tuna_region_react2 <- reactive({ 
+        tuna_merged %>% 
+          filter(year>=1970) %>%
+          filter(species == input$comp_sp) %>% 
+          group_by(year)
+      })
+      
+      
+      
+      p22 <- ggplot()+ 
+        geom_boxplot(data = tuna_region_2, aes(x= factor(year), y = u_umsy), 
+                     fill = "grey",
+                     color = "grey",
+                     width = 0.2, 
+                     outlier.color = NA,
+                     outlier.shape = NA)+
+        stat_summary(data = tuna_region_2, aes(x= factor(year), y = u_umsy, group = 1),
+                     fun = mean, 
+                     geom = "line",
+                     alpha = 0.7,
+                     size = 0.5,
+                     color = "grey")+
+        stat_summary(data = tuna_region_react2(), aes(x= factor(year), y = u_umsy, group = 1),
+                     fun = mean, 
+                     geom = "line",
+                     alpha = 0.7,
+                     size = 0.5,
+                     color = "red")+
+        geom_hline(yintercept = 1, color = "orange2")+
+        scale_x_discrete("Year", breaks = c("1970", "1980", "1990", "2000", "2010", "2018") )+
+        scale_y_continuous(breaks=c(0, 1, 2, 3, 4), limits = c(-0.1, 4.5))+
+        labs(y = "Relative fishing pressure (U/Umsy)")+
+        theme_minimal()
+      
+      p22 <- plotly_build(p22)
+      
+      p22$x$data <- lapply(p22$x$data, FUN = function(x){
+        x$marker = list(opacity = 0)
+        return(x)
+      }) 
+      
+      p22
+      
+      
+    } 
+    
+  })
+  
+  
+  
+#Tab 5 output 3 (catch/catch mean):
+  
+  output$atl_oc_plot3 <- renderPlotly({
+    if (input$campare ==  "Atlantic_stock")  {p3} 
+    else {
+      tuna_region_react3 <- reactive({ 
+        tuna_merged %>% 
+          filter(year>=1970) %>%
+          filter(species == input$comp_sp) %>% 
+          group_by(year)
+      })
+      
+      
+      p33 <- ggplot()+ 
+        geom_boxplot(data = tuna_region_2, aes(x= factor(year), y = c_c_mean), 
+                     fill = "grey",
+                     color = "grey",
+                     width = 0.2, 
+                     outlier.color = NA,
+                     outlier.shape = NA)+
+        stat_summary(data = tuna_region_2, aes(x= factor(year), y = c_c_mean, group = 1),
+                     fun = mean, 
+                     geom = "line",
+                     alpha = 0.7,
+                     size = 0.5,
+                     color = "grey")+
+        stat_summary(data = tuna_region_react3(), aes(x= factor(year), y = c_c_mean, group = 1),
+                     fun = mean, 
+                     geom = "line",
+                     alpha = 0.7,
+                     size = 0.5,
+                     color = "red")+
+        geom_hline(yintercept = 1, color = "orange2")+
+        scale_x_discrete("Year", breaks = c("1970", "1980", "1990", "2000", "2010", "2018") )+
+        scale_y_continuous(breaks=c(0, 1, 2, 3, 4), limits = c(-0.1, 4.5))+
+        labs(y = "Catch/mean catch")+
+        theme_minimal()
+      
+      p33 <- plotly_build(p33)
+      
+      p33$x$data <- lapply(p33$x$data, FUN = function(x){
+        x$marker = list(opacity = 0)
+        return(x)
+      }) 
+      
+      p33
+      
+      
+    } 
     
   })
   
