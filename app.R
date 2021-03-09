@@ -307,16 +307,16 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                            
                                     ),
                            
-                           tabPanel("Ecology",
+                           tabPanel("Species Profiles",
                                     sidebarLayout(
                                       sidebarPanel("our widget/s!",
                                                    radioButtons(inputId = "penguin_species", 
-                                                                label = h3("Biomass Estimates by Species"), 
+                                                                label = h3("Species"), 
                                                                 choices = c("Tuna" = 1, "Salmon" = 2, "Fish 3" = 3, "Fish 4" = 4, "Fish 5" = 5)
                                                                 
                                                    )
                                       ),
-                                      mainPanel("here's where our AWESOME graph will go")
+                                      mainPanel("Click on a species to the left to highlight some basic information in the table")
                                     )
                            ),
 
