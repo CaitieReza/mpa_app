@@ -308,19 +308,36 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                     ),
                            
                            tabPanel("Species Profiles",
+                                    titlePanel("Basic Species Information"),
                                     sidebarLayout(
-                                      sidebarPanel("our widget/s!",
-                                                   radioButtons(inputId = "penguin_species", 
+                                      sidebarPanel("Click a species to learn more:",
+                                                   radioButtons(inputId = "table1", 
                                                                 label = h3("Species"), 
-                                                                choices = c("Tuna" = 1, "Salmon" = 2, "Fish 3" = 3, "Fish 4" = 4, "Fish 5" = 5)
+                                                                choices = c(
+                                                                  "Northern Atlantic Albacore tuna",
+                                                                  "South Atlantic Albacore tuna" = 2,
+                                                                "Bigeye tuna" = 3,
+                                                                "Blue Marlin" = 4,
+                                                                "Eastern Atlantic Sailfish" = 5,
+                                                                "Western Atlantic Sailfish" = 6,
+                                                                "Eastern Atlantic Skipjack" = 7,
+                                                                "Western Atlantic Skipjack" = 8,
+                                                                "North Atlantic Swordfish" = 9,
+                                                                "South Atlantic Swordfish" = 10,
+                                                                "White marlin" = 11,
+                                                                "Yellowfin tuna" = 12)
+                                                                  
                                                                 
                                                    )
                                       ),
-                                      mainPanel("Click on a species to the left to highlight some basic information in the table")
+                                      mainPanel("Possibly some explainers here",
+                                                imageOutput("table")
+                                                )
                                     )
                            ),
 
-                           tabPanel("Time Series",titlePanel("Interactive Atlantic Ocean stocks time series (1950-2017)"),
+                           tabPanel("Time Series",
+                                    titlePanel("Interactive Atlantic Ocean stocks time series (1950-2017)"),
                                     sidebarLayout(
                                       sidebarPanel(selectInput(inputId = "select", label = h4("Select time series"),
                                                                choices = list("Total Biomass" = "biomass", 
@@ -469,6 +486,22 @@ server <- function(input, output) {
               input$select == "c_c_mean" ~ "Catch / catch mean is the ratio of annual catch to the average catch overall, and is another helpful parameter for assessing fishing pressure.")
     
   })
+  
+  output$table <- renderImage({
+    if(input$table1=="Northern Atlantic Albacore tuna")
+      img(src='south_albacore.png', height = '300px')
+    else
+      img(src='biomass.png', height = '300px')
+  })
+
+  
+  
+  
+  
+  
+  
+  
+  
   
   output$tuna_plot <- renderPlotly({
     ggplotly(ggplot(data = tuna_react(), aes(x = year, y = unit)) +
