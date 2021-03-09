@@ -1,0 +1,83 @@
+---
+title: "Wrangling RAM data"
+author: "Caitie Reza"
+date: "2/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+library(janitor)
+library(readxl)
+library(boot)
+library(gt)
+library(patchwork)
+library(broom)
+library(nlstools)
+library(viridis)
+library(ggplot2)
+
+
+```
+
+
+
+```{r}
+
+table <- read_csv("mobility.csv")
+
+
+```
+
+
+```{r}
+spec_table <- table %>% 
+  gt() %>% 
+  tab_options(table.width = pct(80)) %>%   
+   tab_spanner(
+    label = "Species",
+    columns = vars("Common Name", "Scientific Name")
+  ) %>% 
+  tab_spanner(
+    label = "About",
+    columns = vars("Growth Rate (r)", "Population Status", "Mobility Class", "Region")
+  ) %>% 
+  tab_options(column_labels.background.color = "lightgrey") %>% 
+  tab_style(
+    style = list(
+      cell_fill(color = "#8FD8D8"),
+      cell_text(color = "white")
+    ),
+    locations = cells_body(
+       # not needed if coloring all columns
+      rows = 2)
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(style = "italic")
+      ),
+    locations = cells_body(
+      columns = vars("Scientific Name")
+  ))
+
+  
+  
+spec_table
+
+exibble %>%  gt()
+
+
+```
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+﻿Common Name,Scientific Name,Growth Rate (r),Population Status,Mobiity Class,Region
+Northern Albacore Tuna,Thunnus alalunga,,Above target,pelagic,North Atlantic wide
+Southern Albacore Tuna,Thunnus alalunga,,Above target,pelagic,South Atlantic wide
+East Atlantic Bluefin Tuna,Thunnus thynnus,0.082,At target,pelagic,Northeast Atlantic - Mediterannean Sea
+West Atlantic Bluefin Tuna,Thunnus thynnus,0.082,Unknown,pelagic,Newfoundland - Gulf of Mexico
+Bigeye,Thunnus obesus,0.236,Significantly overfished,pelagic,New England- Mid/Southeast Atlantic
+Blue Marlin,Makaira nigricans,0.268,Overfished,pelagic,Atlantic wide
+East Atlantic Sailfish,Istiophorus albicans,0.578,At target,pelagic,Spain - Southeast Atlantic
+West Atlantic Sailfish,Istiophorus albicans,0.578,At target,pelagic,New England- Southwest Atlantic
+East Atlantic Skipjack,Katsuwonus pelamis,0.504,Above target,pelagic,"Spain - Southeast Atlantic, Mediterannean Sea"
+West Atlantic Skipjack,Katsuwonus pelamis,0.504,Above target,pelagic,Massachusetts - Brazil
+North Atlantic Swordfish,Xiphias gladius,0.316,Above target,pelagic,Finland - Equatorial Atlantic
+South Atlantic Swordfish,Xiphias gladius,0.316,Above target,pelagic,Equatorial Atlantic - South Africa/Brazil
+White marlin ,Kajikia albida,0.387,Overfished,pelagic,Atlantic wide
+Yellowfin tuna ,Thunnus albacares,0.372,Above target,pelagic,New England- Mid/Southeast Atlantic
