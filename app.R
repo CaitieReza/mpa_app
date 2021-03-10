@@ -1,6 +1,5 @@
 library(shiny)
 library(tidyverse)
-library(palmerpenguins)
 library(shinythemes)
 library(here)
 library(plotly)
@@ -198,7 +197,13 @@ p1 <- ggplot(tuna_region_bmsy1)+
   theme_minimal()
 
 
-p1 <- plotly_build(p1)
+p1 <- plotly_build(p1)%>% 
+  layout(annotations = 
+           list(x = 0.2, y = -0.1, text = "Red line shows mean B/Bmsy.", 
+                showarrow = F, xref='paper', yref='paper', 
+                xanchor='right', yanchor='auto', xshift=0, yshift=0,
+                font=list(size=10))
+  )
 
 p1$x$data <- lapply(p1$x$data, FUN = function(x){
   x$marker = list(opacity = 0)
@@ -230,7 +235,13 @@ p2 <- ggplot(tuna_region_2)+
   labs(y = "Relative fishing pressure (U/Umsy)")+
   theme_minimal()
 
-p2 <- plotly_build(p2)
+p2 <- plotly_build(p2)%>% 
+  layout(annotations = 
+           list(x = 0.2, y = -0.1, text = "Red line shows mean U/Umsy.", 
+                showarrow = F, xref='paper', yref='paper', 
+                xanchor='right', yanchor='auto', xshift=0, yshift=0,
+                font=list(size=10))
+  )
 
 p2$x$data <- lapply(p2$x$data, FUN = function(x){
   x$marker = list(opacity = 0)
@@ -256,12 +267,19 @@ p3 <- ggplot()+
   theme_minimal()
 
 
-p3 <- plotly_build(p3)
+p3 <- plotly_build(p3)%>% 
+  layout(annotations = 
+           list(x = 0.26, y = -0.1, text = "Red line shows mean catch/mean catch.", 
+                showarrow = F, xref='paper', yref='paper', 
+                xanchor='right', yanchor='auto', xshift=0, yshift=0,
+                font=list(size=10))
+  )
 
 p3$x$data <- lapply(p3$x$data, FUN = function(x){
   x$marker = list(opacity = 0)
   return(x)
 })
+
 
 
 # User Interface
@@ -338,15 +356,15 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                            ),
 
                            tabPanel("Time Series",
-                                    titlePanel("Interactive Atlantic Ocean stocks time series (1950-2017)"),
+                                    titlePanel("Atlantic Ocean stocks time series"),
                                     sidebarLayout(
                                       sidebarPanel(selectInput(inputId = "select", label = h4("Select time series"),
                                                                choices = list("Total Biomass" = "biomass", 
                                                                               "Total Catch" = "catch",
                                                                               "Explotation Rate" = "explotation_rate",
-                                                                              "B/Bmsy" = "b_bmsy",
-                                                                              "U/Umsy" = "u_umsy",
-                                                                              "Catch/catch mean" = "c_c_mean" ),
+                                                                              "Relative biomass (B/Bmsy)" = "b_bmsy",
+                                                                              "Relative fishing pressure (U/Umsy)" = "u_umsy",
+                                                                              "Catch/mean catch" = "c_c_mean" ),
                                                                selected = 1), width = 3
                                                    
                                                    
@@ -355,12 +373,12 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("Time series",
                                                 plotlyOutput(outputId = "tuna_plot"),
                                                 hr(),
-                                                fluidRow(column(12, tags$strong(verbatimTextOutput("value")) ))
+                                                textOutput("value")
                                       )
                                     )
                            ),
                            
-                           tabPanel("Stock Status",titlePanel("Atlantic Ocean stocks relative B, U, and catch (1950-2017)"),
+                           tabPanel("Stock Status",titlePanel("Individual Atlantic Ocean stocks B/Bmsy, U/Umsy, and catch/mean catch"),
                                     sidebarLayout(
                                       sidebarPanel(
                                         radioButtons(inputId = "species",
@@ -386,8 +404,8 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                         
                                         
                                       ),
-                                      mainPanel("Relative B, U, and catch by species",
-                                                plotOutput(outputId = "b_u_catch_plot"),
+                                      mainPanel("Relative biomass, fishing pressure, and catch/mean catch by species",
+                                                plotlyOutput(outputId = "b_u_catch_plot"),
                                                 div(style="display: inline-block;vertical-align:top; width: 150px;",selectInput("date1", 
                                                                                                                                 label = h6("Starting date:"),
                                                                                                                                 choices = 1950:2017,
@@ -402,11 +420,12 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                     )
                            ),
 
-                           tabPanel("Trends",titlePanel("Atlantic Ocean stock trends"),
+                           tabPanel("Trends", titlePanel("Atlantic Ocean stocks trends: B/Bmsy, U/Umsy, and catch/mean catch"),
                                     sidebarLayout(
-                                      sidebarPanel(radioButtons(inputId ="campare", 
-                                                                label = h3("Select"),
-                                                                choices = c("Atlantic Ocean Stock" = "Atlantic_stock", 
+                                      sidebarPanel(style = "position:fixed;width:inherit;",
+                                                   radioButtons(inputId ="campare", 
+                                                                label = h4("Select"),
+                                                                choices = c("Atlantic Ocean stocks" = "Atlantic_stock", 
                                                                             "Compare species" = "Compare_species"),
                                                                 selected = "Atlantic_stock"), 
                                                    
@@ -440,11 +459,19 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                    
                                                    
                                       ),
-                                      mainPanel("Atlantic Ocean Stocks",
+                                      mainPanel(h4("Relative biomass trends", align = "center"),
                                                 plotlyOutput(outputId = "atl_oc_plot"),
-                                                hr(),
+                                                br(),
+                                                br(),
+                                                h4("Relative fishing pressure trends", align = "center"),
                                                 plotlyOutput(outputId = "atl_oc_plot2"),
-                                                plotlyOutput(outputId = "atl_oc_plot3")
+                                                br(),
+                                                br(),
+                                                h4("Catch/mean catch trends", align = "center"),
+                                                plotlyOutput(outputId = "atl_oc_plot3"),
+                                                br(),
+                                                br(),
+                                                br()
                                                 
                                       )
                                     )
@@ -464,6 +491,20 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
 
 # Server function
 server <- function(input, output) {
+  
+  
+  
+##TAB SPECIES PROFILES:  
+  
+  output$table <- renderImage({
+    if(input$table1=="Northern Atlantic Albacore tuna")
+      img(src='south_albacore.png', height = '300px')
+    else
+      img(src='biomass.png', height = '300px')
+  })  
+  
+  
+##TAB TIME SERIES:  
   tuna_react <- reactive({ 
     tuna_merged %>% 
       rename(unit = input$select)
@@ -471,24 +512,25 @@ server <- function(input, output) {
   
   y_labs <- reactive({
     case_when(input$select == "explotation_rate" ~ "explotation rate",
-              input$select == "catch" ~ "total catch (MT)",
-              input$select == "biomass" ~ "total biomass (MT)",
-              input$select == "b_bmsy" ~ "B/Bmsy",
-              input$select == "u_umsy" ~ "U/Umsy",
-              input$select == "c_c_mean" ~ "Catch/catch mean")
+              input$select == "catch" ~ "Total catch (Mt)",
+              input$select == "biomass" ~ "Total biomass (Mt)",
+              input$select == "b_bmsy" ~ "Relative biomass (B/Bmsy)",
+              input$select == "u_umsy" ~ "Relative fishing pressure (U/Umsy)",
+              input$select == "c_c_mean" ~ "Catch/mean catch")
   }) 
   
   
-  output$value <- renderPrint({ 
+  output$value <- renderText({ 
     case_when(input$select == "explotation_rate" ~ "Exploitation rate is the proportion of biomass that is removed from a fish stock or population.",
               input$select == "catch" ~ "Total catch is simply the total quantity of fish or fishery product removed from a single population or species.",
               input$select == "biomass" ~ "Total Biomass is the total volume or “stock” of a population. Here, it is measured as a weight, in metric tons (MT). Though it is perhaps one of the most useful parameters in estimating the health of a specific fishery, it should be noted that total biomass does not indicate a population’s age distribution. (citation)",
-              input$select == "b_bmsy" ~ "B/Bmsy is the ratio of observed biomass (total population volume) to the  at Maximum Sustainable Yield (MSY).  MSY is the highest catch that can be removed from a continuously fished population, given average environmental conditions.",
-              input$select == "u_umsy" ~ "U/Umsy is the ratio of the fishing mortality rate (U) of a target species to that same species’ mortality rate, adjusted to achieve maximum sustainable yield (Umsy).",
+              input$select == "b_bmsy" ~ "Relative biomass (B/Bmsy) is the ratio of observed biomass (total population volume) to the  at Maximum Sustainable Yield (MSY).  MSY is the highest catch that can be removed from a continuously fished population, given average environmental conditions.",
+              input$select == "u_umsy" ~ "Relative fishing pressure (U/Umsy) is the ratio of the fishing mortality rate (U) of a target species to that same species’ mortality rate, adjusted to achieve maximum sustainable yield (Umsy).",
               input$select == "c_c_mean" ~ "Catch / catch mean is the ratio of annual catch to the average catch overall, and is another helpful parameter for assessing fishing pressure.")
     
   })
   
+<<<<<<< HEAD
   output$table <- renderPrint({
     if(input$table1=="1"){
       img(src="south_albacore.png", height = '820px') }
@@ -540,11 +582,13 @@ server <- function(input, output) {
   
   
   
+=======
+>>>>>>> c0af79b5a88da68b5cdd51f2688d841427276b0e
   output$tuna_plot <- renderPlotly({
     ggplotly(ggplot(data = tuna_react(), aes(x = year, y = unit)) +
                geom_line(aes(color = species)) +
                theme_minimal() +
-               labs(x = "year",
+               labs(x = "Year",
                     y = y_labs()) +
                theme(legend.title = element_blank())
     )
@@ -552,9 +596,9 @@ server <- function(input, output) {
   
   
   
+##TAB STOCK STATUS:
   
   
-
   tuna_relative_react <- reactive({ 
     tuna_merged %>% 
       filter(species == input$species) %>% 
@@ -563,20 +607,20 @@ server <- function(input, output) {
   
   
   
-  output$b_u_catch_plot <- renderPlot({
+  output$b_u_catch_plot <- renderPlotly({
     ggplot(data = tuna_relative_react(), aes(x = year,)) +
       geom_line(aes(y = b_bmsy, color = "B/Bmsy"), alpha = 0.7) +
       geom_line(aes(y = u_umsy, color = "U/Umsy"), alpha = 0.7) +
-      geom_line(aes(y = c_c_mean, color = "Catch/catch mean"), alpha = 0.7)+
-      geom_hline(yintercept= 1, linetype = "dashed") +
-      scale_color_manual(values = c( "B/Bmsy" = "red3", "U/Umsy" = "palegreen4", "Catch/catch mean" = "dodgerblue1")) +
-      labs(color = "Relative B, U, and catch")+
+      geom_line(aes(y = c_c_mean, color = "Catch/mean catch"), alpha = 0.7)+
+      geom_hline(yintercept = 1, color = "orange2") +
+      scale_color_manual(values = c( "B/Bmsy" = "red3", "U/Umsy" = "palegreen4", "Catch/mean catch" = "dodgerblue1")) +
+      labs(color = "")+
       labs(y = "")+
       theme_minimal()
     
   })
   
-#TAB 5:
+#TAB TENDS:
 #Tab 5 output 1 (B/Bmsy):
   
   output$atl_oc_plot <- renderPlotly({
@@ -615,7 +659,13 @@ server <- function(input, output) {
         scale_y_continuous(breaks=c(0, 1, 2, 3, 4), limits = c(-0.1, 4.5))+
         labs(y = "Relative biomass (B/Bmsy)")+
         theme_minimal()
-      p11 <- plotly_build(p11)
+      p11 <- plotly_build(p11)%>% 
+        layout(annotations = 
+                 list(x = 0.2, y = -0.1, text = "Red line shows mean B/Bmsy.", 
+                      showarrow = F, xref='paper', yref='paper', 
+                      xanchor='right', yanchor='auto', xshift=0, yshift=0,
+                      font=list(size=10))
+        )
       
       p11$x$data <- lapply(p11$x$data, FUN = function(x){
         x$marker = list(opacity = 0)
@@ -630,7 +680,8 @@ server <- function(input, output) {
   
   
   
-#Tab 5 output 2 (U/Umsy):  
+  
+  
   
   output$atl_oc_plot2 <- renderPlotly({
     if (input$campare ==  "Atlantic_stock")  {p2} 
@@ -670,7 +721,13 @@ server <- function(input, output) {
         labs(y = "Relative fishing pressure (U/Umsy)")+
         theme_minimal()
       
-      p22 <- plotly_build(p22)
+      p22 <- plotly_build(p22)%>% 
+        layout(annotations = 
+                 list(x = 0.2, y = -0.1, text = "Red line shows mean U/Umsy.", 
+                      showarrow = F, xref='paper', yref='paper', 
+                      xanchor='right', yanchor='auto', xshift=0, yshift=0,
+                      font=list(size=10))
+        )
       
       p22$x$data <- lapply(p22$x$data, FUN = function(x){
         x$marker = list(opacity = 0)
@@ -686,7 +743,8 @@ server <- function(input, output) {
   
   
   
-#Tab 5 output 3 (catch/catch mean):
+  
+  
   
   output$atl_oc_plot3 <- renderPlotly({
     if (input$campare ==  "Atlantic_stock")  {p3} 
@@ -724,7 +782,14 @@ server <- function(input, output) {
         labs(y = "Catch/mean catch")+
         theme_minimal()
       
-      p33 <- plotly_build(p33)
+      p33 <- plotly_build(p33)%>% 
+        layout(annotations = 
+                 list(x = 0.26, y = -0.1, text = "Red line shows mean catch/mean catch.", 
+                      showarrow = F, xref='paper', yref='paper', 
+                      xanchor='right', yanchor='auto', xshift=0, yshift=0,
+                      font=list(size=10))
+        )
+      
       
       p33$x$data <- lapply(p33$x$data, FUN = function(x){
         x$marker = list(opacity = 0)
@@ -737,6 +802,7 @@ server <- function(input, output) {
     } 
     
   })
+  
   
   
 }
