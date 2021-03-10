@@ -313,25 +313,26 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       sidebarPanel("Click a species to learn more:",
                                                    radioButtons(inputId = "table1", 
                                                                 label = h3("Species"), 
-                                                                choices = c(
-                                                                  "Northern Atlantic Albacore tuna",
-                                                                  "South Atlantic Albacore tuna" = 2,
-                                                                "Bigeye tuna" = 3,
-                                                                "Blue Marlin" = 4,
-                                                                "Eastern Atlantic Sailfish" = 5,
-                                                                "Western Atlantic Sailfish" = 6,
-                                                                "Eastern Atlantic Skipjack" = 7,
-                                                                "Western Atlantic Skipjack" = 8,
-                                                                "North Atlantic Swordfish" = 9,
-                                                                "South Atlantic Swordfish" = 10,
-                                                                "White marlin" = 11,
-                                                                "Yellowfin tuna" = 12)
+                                                                choiceNames = list("Northern Atlantic Albacore tuna",
+                                                                  "South Atlantic Albacore tuna",
+                                                                "Bigeye tuna",
+                                                                "Blue Marlin",
+                                                                "Eastern Atlantic Sailfish",
+                                                                "Western Atlantic Sailfish",
+                                                                "Eastern Atlantic Skipjack",
+                                                                "Western Atlantic Skipjack",
+                                                                "North Atlantic Swordfish",
+                                                                "South Atlantic Swordfish",
+                                                                "White marlin",
+                                                                "Yellowfin tuna"),
+                                                                choiceValues = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"),
+                                                                
                                                                   
                                                                 
                                                    )
                                       ),
-                                      mainPanel("Possibly some explainers here",
-                                                imageOutput("table")
+                                      mainPanel(
+                                                uiOutput("table")
                                                 )
                                     )
                            ),
@@ -379,6 +380,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                                  "Atlantic bluefin tuna Eastern Atlantic",
                                                                  "Atlantic bluefin tuna Western Atlantic"),
                                                      selected = "Albacore tuna Northern Atlantic"
+                                                     
                                         )
                                         
                                         
@@ -487,11 +489,46 @@ server <- function(input, output) {
     
   })
   
-  output$table <- renderImage({
-    if(input$table1=="Northern Atlantic Albacore tuna")
-      img(src='south_albacore.png', height = '300px')
+  output$table <- renderPrint({
+    if(input$table1=="1"){
+      img(src="south_albacore.png", height = '820px') }
+    
     else
-      img(src='biomass.png', height = '300px')
+      if(input$table1 == "2"){
+        img(src='south_albacore.png', height = '820px') }
+    else
+      if(input$table1 == "3"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "4"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "5"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "6"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "7"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "8"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "9"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "10"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "11"){
+        img(src='biomass.png', height = '300px') }
+    else
+      if(input$table1 == "12"){
+        img(src='biomass.png', height = '300px') }
+    
+    
+     
   })
 
   
