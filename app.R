@@ -297,7 +297,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                             h2("About the App"),
                                             p("StockWatch is a tool for visualizing biomass, fishing pressure, and other components of stock assessments that are useful for tracking the health of target species. "),
                                             h3("Management Implications"),
-                                            p("Still want to fill this part in"),
+                                            p("It is essential to not only evaluate the status of fish stocks, but also the degree to which they are managed.   In the “Trends” tab, StockWatch allows users to compare biomass values with fishing pressure and catch parameters for Atlantic fish populations with differing management levels."),
                                             h3("Focus Species"),
                                             h4("Our tool focuses on 10 commercially viable species in the North Atlantic:"),
                                             h5("• Northern Atlantic Albacore tuna"),
@@ -325,35 +325,38 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                            
                                     ),
                            
-                           tabPanel("Species Profiles",
-                                    titlePanel("Basic Species Information"),
+                           tabPanel("Species",
+                                   
                                     sidebarLayout(
                                       sidebarPanel("Click a species to learn more:",
                                                    radioButtons(inputId = "table1", 
                                                                 label = h3("Species"), 
-                                                                choiceNames = list("Northern Atlantic Albacore tuna",
-                                                                  "South Atlantic Albacore tuna",
-                                                                  "East Atlantic Bluefin Tuna",
-                                                                  "West Atlantic Bluefin Tuna",
-                                                                "Bigeye tuna",
-                                                                "Blue Marlin",
-                                                                "Eastern Atlantic Sailfish",
-                                                                "Western Atlantic Sailfish",
-                                                                "Eastern Atlantic Skipjack",
-                                                                "Western Atlantic Skipjack",
-                                                                "North Atlantic Swordfish",
-                                                                "South Atlantic Swordfish",
-                                                                "White marlin",
-                                                                "Yellowfin tuna"),
-                                                                choiceValues = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"),
+                                                                choices = c("Albacore tuna Northern Atlantic" = "1",
+                                                                            "Albacore tuna South Atlantic" = "2",
+                                                                            "Bigeye tuna Atlantic Ocean" = "3",
+                                                                            "Blue marlin Atlantic Ocean" = "4",
+                                                                            "Sailfish Eastern Atlantic" = "5",
+                                                                            "Sailfish Western Atlantic" = "6",
+                                                                            "Skipjack tuna Eastern Atlantic" = "7",
+                                                                            "Skipjack tuna Western Atlantic" = "8",
+                                                                            "Swordfish Northern Atlantic" = "9",
+                                                                            "Swordfish South Atlantic" = "10",
+                                                                            "White marlin Atlantic Ocean" = "11",
+                                                                            "Yellowfin tuna Atlantic Ocean" = "12",
+                                                                            "Atlantic bluefin tuna Eastern Atlantic" = "13",
+                                                                            "Atlantic bluefin tuna Western Atlantic" = "14"),
+                                                                selected = "1"
                                                                 
-                                                                  
-                                                                
-                                                   )
+                                                   ), width = 3
                                       ),
-                                      mainPanel(
-                                                uiOutput("table")
-                                                )
+                                      mainPanel(h2("  Basic Species Information"),
+                                                br(),
+                                                br(),
+                                        uiOutput("table"),
+                                        "Data: Fisheries, NOAA. All Species Directory Page | NOAA Fisheries. https://www.fisheries.noaa.gov/species-directory. National.",
+                                        "Photo: NOAA Fisheries"
+ 
+                                      )
                                     )
                            ),
 
@@ -375,7 +378,8 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                       mainPanel("Time series",
                                                 plotlyOutput(outputId = "tuna_plot"),
                                                 hr(),
-                                                textOutput("value")
+                                                textOutput("value"),
+                                                "Data: RAM Legacy Stock Assessment Database. Atlantic Ocean Tunas Region | RAM Legacy. https://www.ramlegacy.org/explore-the-database/regions/atlantic-ocean/."
                                       )
                                     )
                            ),
@@ -415,7 +419,8 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                 div(style="display: inline-block;vertical-align:top; width: 150px;", selectInput("date2", 
                                                                                                                                  label = h6("Ending date:"),
                                                                                                                                  choices = 1950:2017,
-                                                                                                                                 selected = 2017))
+                                                                                                                                 selected = 2017)),
+                                                "Data: RAM Legacy Stock Assessment Database. Atlantic Ocean Tunas Region | RAM Legacy. https://www.ramlegacy.org/explore-the-database/regions/atlantic-ocean/"
                                                 
                                                 
                                       )
@@ -473,7 +478,8 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                 plotlyOutput(outputId = "atl_oc_plot3"),
                                                 br(),
                                                 br(),
-                                                br()
+                                                br(),
+                                                "Data: RAM Legacy Stock Assessment Database. Atlantic Ocean Tunas Region | RAM Legacy. https://www.ramlegacy.org/explore-the-database/regions/atlantic-ocean/"
                                                 
                                       )
                                     )
@@ -494,7 +500,23 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
 # Server function
 server <- function(input, output) {
   
-
+##TAB SPECIES:
+  output$table <-renderPrint({ 
+    if (input$table1 ==  "1")  {img(src='north_albacore.png', height = '800px', align = "left")} 
+    else if (input$table1 ==  "2")  {img(src='south_alb.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "3")  {img(src='bigeye.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "4")  {img(src='blue_marlin.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "5")  {img(src='east_sail.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "6")  {img(src='west_sail.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "7")  {img(src='east_skipjack.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "8")  {img(src='west_skipjack.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "9")  {img(src='north_sword.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "10")  {img(src='south_sword.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "11")  {img(src='white_marlin.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "12")  {img(src='yellowfin.png', height = '800px', align = "left")}
+    else if (input$table1 ==  "13")  {img(src='east_bluefin.png', height = '800px', align = "left")}
+    else {img(src='w_bluefin.png', height = '800px', align = "left")}
+  })
   
   
 ##TAB TIME SERIES:  
@@ -524,54 +546,6 @@ server <- function(input, output) {
   })
   
 
-  output$table <- renderPrint({
-    if(input$table1=="1"){
-      img(src='north_albacore.png', height = '800px') }
-    
-    else
-      if(input$table1 == "2"){
-        img(src='south_alb.png', height = '800px') }
-        
-    else
-      if(input$table1 == "3"){
-        img(src='e_bluefin.png', height = '800px') }
-    else
-      if(input$table1 == "4"){
-        img(src='w_bluefin.png', height = '800px') }
-    else
-      if(input$table1 == "5"){
-        img(src='bigeye.png', height = '800px') }
-    else
-      if(input$table1 == "6"){
-        img(src='blue_marlin.png', height = '800px') }
-    else
-      if(input$table1 == "7"){
-        img(src='east_sail.png', height = '800px') }
-    else
-      if(input$table1 == "8"){
-        img(src='west_sail.png', height = '800px') }
-    else
-      if(input$table1 == "9"){
-        img(src='north_albacore.png', height = '800px') }
-    else
-      if(input$table1 == "10"){
-        img(src='https://dl.boxcloud.com/api/2.0/internal_files/785244974875/versions/839032428475/representations/png_paged_2048x2048/content/1.png?access_token=1!72y7WF907o4tP6thNLJiTff_cI6pcJrS3FNjKAMCyCZBkGSNwuR5Q-i9sp6fSay2xVL6FAf0zGTE7qExfM4VZqpN4HiJdB4a9lgJLFILtTh4F4HBsGUo-EcGLApO-DTPuep9jkFysdVFzvhw4BnSWuOTZ3Qqj8t1MuDpLiEaJgY5SXLdGQYwZtoWTOmMRRfU_sB3HW1ZVI-mlQ0PF09URdKK-sMd5zI9mqqqttDeYEGLZUfwL2Uaa7D40jPveLeA_88RadRlq5AH-EwjFkoMaW1yMW71vKw_JRMcWWtybPZj-dh6prfK-LbC3YNqnVd3iK4IXY_4R6r3VqpQ2zMXcRA2WB2xkDqgL9erHvx_xhGUPfhG8W7f-8XOCoIZSbpjOWALdEL8UoCiQ9kt2HVXsvj9HKw-HDr0zi201a39pQV7jt4z1tUvB7eQMadG4fftFKjjG9WmyIoYpFsglaNg_ANZ1K6y7YK76dZT7-fQHKmTX0hyNGLUUHFEkYHdx_mDP1TVdOzGKnkvMZCN_TVVIjHkB31mO0zwKVKs3wGec-17M4ofPuHK0fb16KbWPL1QTXSA4IAlX608LTOFa74BVIlsrUT6fibst-6JAuqiIoJkkDxjAd9XLD47JvUzGe2FiHAuGXNyeQrRdOf0GjtvqvX18L8qsPODlalObSHuCGTWAf38&box_client_name=box-content-preview&box_client_version=2.65.0', height = '800px') }
-    else
-      if(input$table1 == "11"){
-        img(src='https://dl.boxcloud.com/api/2.0/internal_files/785234611545/versions/839020016745/representations/png_paged_2048x2048/content/1.png?access_token=1!6A7K_P2KcPQOmoXNQfnzclbvxPAw6GmbzLSiqUUGPFqIGIqpX3A_qrZV1R9pyR3MQXmcp_o0UWnWy470GnxfGkD-0gpiPo8Norc8FtRFAqkQrrqzUoiwiIed3gn07e95xifasmqMoaEJWpvXsA-Fg1j4opVEx_DUkMQJJuykq-ew_CJfEXFgO2zQnlp2vAnChDsh4PaeX1QKRWvoEyoMK3A_shEpZDI8Vjb2MnjsXfuC-9nIvNgZDDTefDNHb_CeGXzbIXn81SDQLznctnuK-mQSbI6V5ilc7q2zzEQqFEHK8r-sudaNlfM6G2Cisf0tpuK7dBM484e2lfvBb9bP0IDUk04IpRUvspjX_Tw2NtIQSRgD6Ou9qkQcV9nvU3drZ-MlrB-UKwYGfepj-W3pO_4gPRBXLgqUkVyb43BfWiXsADfCGnMsq_uWvPUkzicF8bibFOzVNRhkXz7mwWPh5UMVT8pcevkNARLXkTmR2e6uDm7JtS-xvtXUP82VOqUEAG9-vIquAXZ6C21s6HF28Rwe4ZleTf7mOFELB2vYt4vNULj_VWi-otbHRHFrCcoIRmwVMgNGE0EorUMDocQWV84AF9A_GtekqG_TkEQNLAIWAhw9RyCGx49UX5I5Jkn858gIWfU-MabyfaS7oqtvyKMYpP9j0IEGGo2SZZ2alxS4mLz0&box_client_name=box-content-preview&box_client_version=2.65.0', height = '800px') }
-    else
-      if(input$table1 == "12"){
-        img(src='https://dl.boxcloud.com/api/2.0/internal_files/785249806996/versions/839037537796/representations/png_paged_2048x2048/content/1.png?access_token=1!01Z3Ht9ey9iScjNtpPmIZqVNoZL89POnnzVnNSxZIJ8ju7lW4AQQaIpN7D8ydoAR5trwYd8G1Av1bVqazRpyk-lefHm1GJap_LC6FTxmSP4JV9Pd59wmlTPZK6rn5LxVCA0PgRt3_viW0Tc6yGRETnOS1IkN2zCLLKV9kzun5um3VQJIznGHEQ2VshM_BoHugz9Ik35vZPvT4ax4tgNWvAt9xpC1Ck2lMasitPpELbvPSn9d2TRZnQEM1gRYE90Y5HVEnruFwXk-A9mws2we-vlC4KL7BPl_1zvnCpRrsq883v09kQ_GDrEaq9lMmm44ii7aulvbxL9m6Nfxs7YC5Ghmbo3bIJ22wK_WxRu7ScxQduQ6pqwwU0Qu9uBimd-U44DvlF_hYAiH5foTRulPJZsnSdtTyOMeU09DBjjbbluQatvWwdH-3bchzFh6tWeZWlvwTG438TcRtkCk68ljCjkoSOYY3WmnnC21h-ECJcmDSTxpOO9Z_e8JTkc2uCYSq5PIbtERJMyu-lPLITTGcYANXnVK7hY36Q7iJz11kceK2SLinEDiBNccrQ7khzXXrz_Bnx8okMOvqxxt6DTSNdvsk9ts661OSiE6zIO2-3-b2w8NERF6KsLLZJ-1yHVbdxtDbksQTG7JbA5nVzMdy3pAUK8-BHHA0XH-8hy7GWUQAEu6&box_client_name=box-content-preview&box_client_version=2.65.0', height = '800px') }
-    else
-      if(input$table1 == "13"){
-        img(src='https://dl.boxcloud.com/api/2.0/internal_files/785250448457/versions/839038311257/representations/png_paged_2048x2048/content/1.png?access_token=1!T9lPYiInFbcF1j0Gj1trlE3lPHZf6q9nON0e6q0u3XC7P8QxA7ui58z5fODlRSOm1rcRxDQyMySMJrRtkroVIa216B9xbbxVYw72bCtd0Vuj7wkFquFTf9UGnKwNH55oIjoTWZ2zwH9QZGCvuVrS-0FWU-4FF3m0-XbCYwakbks3AVSXHcLzZ5NLxDbr6YJVz7s36kl3uGd7LuXKpbT-zdppDIA3B_iCxpu8appZLfDcQxiOPtU0FO5vf8Vh95aSo-wloEZTNcOahwiWwedUn4qucUyNGL9QkyYm5QruNC2LoNQDNsl31GadiDyhZC946GV3U353esP7__Up6Mugxg2XTmRRBLcUAlgkMVoYrV7rvQinL5vm0TrIw7Yjs9pkLF3_jwcScLQxwawZ1ZvfCE-zoRIddJw0TyrtejYCKXQ_obXDQEXABHQwKmOVdB2qLa0pnQm1zgx6MLEEuXcDp2OcSjkriCroa6XbWL-a8OaruaibcFVAKTgzdIVg33d-Nz3lq9bpaJkiPR1tnMqVH5uadmlGNHJeOc_fXYgevsw3QLkc7GaunabpdixehRuXeeH6JjwvTb2hqhA_aRuoJ9eF8Yzob0r6v8-ekfn3pHJ4FDAn4VmtDUDg9miNuFUFfAeXGm0cFL-OlnpCCeeSCfQ3X1ByrhDWnO9tYFhvmcpvMKxW&box_client_name=box-content-preview&box_client_version=2.65.0', height = '800px') }
-    else
-      if(input$table1 == "14"){
-        img(src='https://dl.boxcloud.com/api/2.0/internal_files/785250465226/versions/839038382026/representations/png_paged_2048x2048/content/1.png?access_token=1!UNr1VMg_tQufjz3Vd38OegGniaAiOz_jkcdtW0f9vnNDidyyE4067igzjm6rp0DSwXSxQog0BG9_2RKWlx4puVepQqzyi4UUzNGilPUmLabGwR0lk_z13ppsDeRbPlrOndh98DNqFGn5kDuDzZdrNWqmv_aGSF05DA1hwtkpjiUlcr9TYCnq47guRtktxiYS7BYegO20mq8tZITDgjPs3FEq69MesHqwGbij_0VQ-tifv7xc9nm7-jdrWGA1eRUR2FmApYAM_pXGW1t5WF5TdFl6WQjUzenXZHeCf99zZAhoRGo_cgbntFOVzfLb_m9a_Gqej-FD-wy_9G_aWxuwD0Xpv-vTeWfPkz3Tn7d9fFhPZRId5IWRE2DMS9AT1nxmtSodVXqsdHUMs40pbF7a-uE9Bj4IlDxNvZlMSYYRjlekb_VT3MdbF9zXgHlMA9wNtkUVsMxM4MJEs5JbPjUG9ThGozpjkmDGCJ37hDx03u4-hffQ8ISF_RxVCvDAYV5bZDIhwEB8pbwHM0M5OkYdvz7naCI9ld72_A2de1Y92VzPVy2mlgrAmSjwojtuER94K6NP0n0j2Vwq9s0m492gDizaMXNP6ND7JljkTQBGjp5BF210BJg_HNiVSCDKyBsi1zuW_1XB7rpuWalYncpsi1mXGaJxp0JwN0SahTYoeOOt_6kn&box_client_name=box-content-preview&box_client_version=2.65.0', height = '800px') }
-    
-    
-     
-  })
 
   
   
