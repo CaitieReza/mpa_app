@@ -530,7 +530,7 @@ server <- function(input, output) {
     
   })
   
-<<<<<<< HEAD
+
   output$table <- renderPrint({
     if(input$table1=="1"){
       img(src="south_albacore.png", height = '820px') }
@@ -575,15 +575,7 @@ server <- function(input, output) {
 
   
   
-  
-  
-  
-  
-  
-  
-  
-=======
->>>>>>> c0af79b5a88da68b5cdd51f2688d841427276b0e
+
   output$tuna_plot <- renderPlotly({
     ggplotly(ggplot(data = tuna_react(), aes(x = year, y = unit)) +
                geom_line(aes(color = species)) +
